@@ -1,0 +1,104 @@
+html * {
+  font-family: "nimbus-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.02em;
+  line-height: 1.25; }
+
+.container {
+  margin-top: 7.5em;
+  position: relative; }
+  @media (min-width: 768px) {
+    .container {
+      margin-top: 15em; } }
+
+h1 {
+  font-size: 2.25em;
+  letter-spacing: -0.0625em; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3.75em; } }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 4em; } }
+
+h2 {
+  letter-spacing: -0.04em;
+  font-size: 1.5em; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 1.75em; } }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 2.75em; } }
+
+p {
+  font-size: 0.85em;
+  line-height: 1.2em; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 1.02em; } }
+  @media (min-width: 992px) {
+    p {
+      font-size: 1.10em; } }
+
+hr {
+  margin: 0em;
+  background-color: black;
+  height: 0.5em;
+  border: none; }
+
+a {
+  font-weight: bold;
+  color: black; }
+
+.logo-container #logo {
+  min-width: 8em; }
+
+.logo-container #lines {
+  position: absolute;
+  z-index: -1;
+  display: none;
+  transition: 0.3s ease; }
+  @media (min-width: 768px) {
+    .logo-container #lines {
+      display: block;
+      width: 11em;
+      margin: 1.5em -1.5em; } }
+  @media (min-width: 992px) {
+    .logo-container #lines {
+      width: 9.5em; } }
+  @media (min-width: 1200px) {
+    .logo-container #lines {
+      width: 11em; } }
+
+@media (min-width: 768px) {
+  .logo-container:hover #lines {
+    margin: 2.5em -2.5em; } }
+
+.copy {
+  margin-top: 1em; }
+  .copy div h1,
+  .copy div h2 {
+    margin-bottom: 0.3em; }
+  .copy div p {
+    margin-top: 1.25em; }
+  .copy div a {
+    font-weight: bold;
+    color: black; }
+    .copy div a:hover {
+      text-decoration: none; }
+
+.img div {
+  height: 12.5em;
+  background-color: gray; }
+  @media (min-width: 768px) {
+    .img div {
+      height: 17.5em; } }
+
+@media (min-width: 768px) {
+  .brixwork {
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media (min-width: 992px) {
+  .brixwork {
+    margin-top: -1em; } }
