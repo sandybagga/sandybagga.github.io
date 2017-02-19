@@ -47,6 +47,15 @@ hr {
   background-color: black;
   height: 0.5em;
   border: none; }
+  @media (min-width: 768px) {
+    hr {
+      height: 12px; } }
+  @media (min-width: 992px) {
+    hr {
+      height: 10px; } }
+  @media (min-width: 1200px) {
+    hr {
+      height: 12px; } }
 
 a {
   font-weight: bold;
@@ -54,6 +63,9 @@ a {
 
 .logo-container #logo {
   min-width: 8em; }
+  @media (max-width: 768px) {
+    .logo-container #logo {
+      max-width: 141px; } }
 
 .logo-container #lines {
   position: absolute;

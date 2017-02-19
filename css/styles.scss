@@ -53,7 +53,15 @@ hr {
     background-color: black;
     height: 0.5em;
     border: none;
-    @media (min-width: 768px) {}
+    @media (min-width: 768px) {
+        height: 12px;
+    }
+    @media (min-width: 992px) {
+        height: 10px;
+    }
+    @media (min-width: 1200px) {
+        height: 12px;
+    }
 }
 
 a {
@@ -64,6 +72,9 @@ a {
 .logo-container {
     #logo {
         min-width: 8em;
+         @media (max-width: 768px) {
+            max-width:141px;
+        }
     }
     #lines {
         position: absolute;
