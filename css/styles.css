@@ -60,7 +60,6 @@ a {
   max-width: 171px; }
 
 .copy {
-<<<<<<< HEAD
   margin-top: 13em; }
   .copy h1,
   .copy h2 {
@@ -73,19 +72,21 @@ a {
     margin-top: 0.48em;
     margin-bottom: 1.2em; }
   .copy a {
-=======
-  margin-top: 1em; }
-  .copy div h1,
-  .copy div h2 {
-    margin-bottom: 0em; }
-  .copy div p {
-    margin-top: 1.25em; }
-  .copy div a {
->>>>>>> 3f654c6f9a34a610d70a64ae5a12ee446cbb6cc7
     font-weight: bold;
     color: black; }
     .copy a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      margin-top: 1em; }
+      .copy a:hover div h1,
+      .copy a:hover div h2 {
+        margin-bottom: 0em; }
+      .copy a:hover div p {
+        margin-top: 1.25em; }
+      .copy a:hover div a {
+        font-weight: bold;
+        color: black; }
+        .copy a:hover div a:hover {
+          text-decoration: none; }
 
 .img div {
   height: 12.5em;
