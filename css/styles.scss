@@ -8,7 +8,7 @@ html * {
     margin-top: 7.5em;
     position: relative;
     @media (min-width: 768px) {
-        margin-top: 25vh;
+        margin-top: 27vh;
     }
 }
 
@@ -16,9 +16,6 @@ h1 {
     font-size: 2.25em;
     letter-spacing: -0.0625em;
     @media (min-width: 768px) {
-        font-size: 3.75em;
-    }
-    @media (min-width: 992px) {
         font-size: 4em;
     }
 }
@@ -37,31 +34,39 @@ h2 {
     }
 }
 
+h3 {
+    letter-spacing: -0.03em;
+    font-size: 2em;
+}
+
+h4{
+    letter-spacing: -0.04em;
+    font-size: 1.45em;
+}
+
 p {
     font-size: 0.85em;
     line-height: 1.2em;
     @media (min-width: 768px) {
         font-size: 1.02em;
     }
-    @media (min-width: 992px) {
-        font-size: 1.10em;
-    }
 }
 
 hr {
     margin: 0em;
     background-color: black;
-    height: 0.5em;
+    height: 12px;
     border: none;
-    @media (min-width: 768px) {
-        height: 12px;
-    }
-    @media (min-width: 992px) {
-        height: 10px;
-    }
-    @media (min-width: 1200px) {
-        height: 12px;
-    }
+    max-width: 171px;
+    // @media (min-width: 768px) {
+    //     height: 12px;
+    // }
+    // @media (min-width: 992px) {
+    //     height: 10px;
+    // }
+    // @media (min-width: 1200px) {
+    //     height: 12px;
+    // }
 }
 
 a {
@@ -71,55 +76,37 @@ a {
 
 .logo-container {
     #logo {
-        min-width: 8em;
-         @media (max-width: 768px) {
-            max-width:141px;
-        }
-    }
-    #lines {
-        position: absolute;
-        z-index: -1;
-        display: none;
-        transition: 0.3s ease;
-        @media (min-width: 768px) {
-            display: block;
-            width: 11em;
-            margin: 1.5em -1.5em;
-        }
-        @media (min-width: 992px) {
-            width: 9.5em;
-        }
-        @media (min-width: 1200px) {
-            width: 11em;
-        }
-    }
-    @media (min-width: 768px) {
-        &:hover {
-            #lines {
-                margin: 2.5em -2.5em;
-            }
-        }
+        min-width: 9.5em;
+        //  @media (max-width: 768px) {
+        max-width: 171px;
+        // }
     }
 }
 
 .copy {
-    margin-top: 1em;
-    div {
-        h1,
-        h2 {
-            margin-bottom: 0.3em;
-        }
-        p {
-            margin-top: 1.25em;
-        }
-        a {
-            font-weight: bold;
-            color: black;
-            &:hover {
-                text-decoration: none;
-            }
+    margin-top: 13em;
+    //  div {
+    h1,
+    h2 {
+        margin-top: -0.52em;
+        margin-bottom: 0.07em;
+    }
+    h4 {
+        margin-top: 0.5em;
+        font-weight: 400;
+    }
+    p {
+        margin-top: 0.48em;
+        margin-bottom: 1.2em;
+    }
+    a {
+        font-weight: bold;
+        color: black;
+        &:hover {
+            text-decoration: none;
         }
     }
+    // }
 }
 
 .img {
@@ -140,4 +127,30 @@ a {
     @media (min-width: 992px) {
         margin-top: -1em;
     }
+}
+
+.frame {
+    box-sizing: border-box;
+    border: 12px solid black;
+    border-bottom: none;
+    position: fixed;
+    top: 18%;
+    left: 10%;
+    width: 80%;
+    height: 50%;
+    z-index: -3;
+}
+
+.frame-bot {
+    box-sizing: border-box;
+    border: 12px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: fixed;
+    top: 18%;
+    left: 10%;
+    width: 80%;
+    height: 50%;
+    z-index: 99;
 }

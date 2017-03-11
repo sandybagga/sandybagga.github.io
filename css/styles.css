@@ -8,15 +8,12 @@ html * {
   position: relative; }
   @media (min-width: 768px) {
     .container {
-      margin-top: 25vh; } }
+      margin-top: 27vh; } }
 
 h1 {
   font-size: 2.25em;
   letter-spacing: -0.0625em; }
   @media (min-width: 768px) {
-    h1 {
-      font-size: 3.75em; } }
-  @media (min-width: 992px) {
     h1 {
       font-size: 4em; } }
 
@@ -32,73 +29,52 @@ h2 {
     h2 {
       font-size: 2.75em; } }
 
+h3 {
+  letter-spacing: -0.03em;
+  font-size: 2em; }
+
+h4 {
+  letter-spacing: -0.04em;
+  font-size: 1.45em; }
+
 p {
   font-size: 0.85em;
   line-height: 1.2em; }
   @media (min-width: 768px) {
     p {
       font-size: 1.02em; } }
-  @media (min-width: 992px) {
-    p {
-      font-size: 1.10em; } }
 
 hr {
   margin: 0em;
   background-color: black;
-  height: 0.5em;
-  border: none; }
-  @media (min-width: 768px) {
-    hr {
-      height: 12px; } }
-  @media (min-width: 992px) {
-    hr {
-      height: 10px; } }
-  @media (min-width: 1200px) {
-    hr {
-      height: 12px; } }
+  height: 12px;
+  border: none;
+  max-width: 171px; }
 
 a {
   font-weight: bold;
   color: black; }
 
 .logo-container #logo {
-  min-width: 8em; }
-  @media (max-width: 768px) {
-    .logo-container #logo {
-      max-width: 141px; } }
-
-.logo-container #lines {
-  position: absolute;
-  z-index: -1;
-  display: none;
-  transition: 0.3s ease; }
-  @media (min-width: 768px) {
-    .logo-container #lines {
-      display: block;
-      width: 11em;
-      margin: 1.5em -1.5em; } }
-  @media (min-width: 992px) {
-    .logo-container #lines {
-      width: 9.5em; } }
-  @media (min-width: 1200px) {
-    .logo-container #lines {
-      width: 11em; } }
-
-@media (min-width: 768px) {
-  .logo-container:hover #lines {
-    margin: 2.5em -2.5em; } }
+  min-width: 9.5em;
+  max-width: 171px; }
 
 .copy {
-  margin-top: 1em; }
-  .copy div h1,
-  .copy div h2 {
-    margin-bottom: 0.3em; }
-  .copy div p {
-    margin-top: 1.25em; }
-  .copy div a {
+  margin-top: 13em; }
+  .copy h1,
+  .copy h2 {
+    margin-top: -0.52em;
+    margin-bottom: 0.07em; }
+  .copy h4 {
+    margin-top: 0.5em;
+    font-weight: 400; }
+  .copy p {
+    margin-top: 0.48em;
+    margin-bottom: 1.2em; }
+  .copy a {
     font-weight: bold;
     color: black; }
-    .copy div a:hover {
+    .copy a:hover {
       text-decoration: none; }
 
 .img div {
@@ -116,3 +92,27 @@ a {
 @media (min-width: 992px) {
   .brixwork {
     margin-top: -1em; } }
+
+.frame {
+  box-sizing: border-box;
+  border: 12px solid black;
+  border-bottom: none;
+  position: fixed;
+  top: 18%;
+  left: 10%;
+  width: 80%;
+  height: 50%;
+  z-index: -3; }
+
+.frame-bot {
+  box-sizing: border-box;
+  border: 12px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  position: fixed;
+  top: 18%;
+  left: 10%;
+  width: 80%;
+  height: 50%;
+  z-index: 99; }
