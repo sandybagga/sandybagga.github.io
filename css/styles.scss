@@ -84,6 +84,7 @@ a {
 }
 
 .copy {
+<<<<<<< HEAD
     margin-top: 13em;
     //  div {
     h1,
@@ -104,6 +105,23 @@ a {
         color: black;
         &:hover {
             text-decoration: none;
+=======
+    margin-top: 1em;
+    div {
+        h1,
+        h2 {
+            margin-bottom: 0em;
+        }
+        p {
+            margin-top: 1.25em;
+        }
+        a {
+            font-weight: bold;
+            color: black;
+            &:hover {
+                text-decoration: none;
+            }
+>>>>>>> 3f654c6f9a34a610d70a64ae5a12ee446cbb6cc7
         }
     }
     // }
@@ -128,6 +146,7 @@ a {
         margin-top: -1em;
     }
 }
+<<<<<<< HEAD
 
 .frame {
     box-sizing: border-box;
@@ -154,3 +173,5 @@ a {
     height: 50%;
     z-index: 99;
 }
+=======
+>>>>>>> 3f654c6f9a34a610d70a64ae5a12ee446cbb6cc7
