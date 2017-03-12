@@ -4,14 +4,14 @@ html * {
   line-height: 1.25; }
 
 .container {
-  margin-top: 7.5em;
+  margin-top: 4.5em;
   position: relative; }
   @media (min-width: 768px) {
     .container {
       margin-top: 27vh; } }
 
 h1 {
-  font-size: 2.25em;
+  font-size: 2.55em;
   letter-spacing: -0.0625em; }
   @media (min-width: 768px) {
     h1 {
@@ -35,7 +35,10 @@ h3 {
 
 h4 {
   letter-spacing: -0.04em;
-  font-size: 1.45em; }
+  font-size: 1.125em; }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 1.45em; } }
 
 p {
   font-size: 0.85em;
@@ -47,46 +50,60 @@ p {
 hr {
   margin: 0em;
   background-color: black;
-  height: 12px;
   border: none;
-  max-width: 171px; }
+  height: 10px;
+  max-width: 7em; }
+  @media (min-width: 768px) {
+    hr {
+      height: 12px;
+      max-width: 171px; } }
 
 a {
   font-weight: bold;
   color: black; }
 
 .logo-container #logo {
-  min-width: 9.5em;
-  max-width: 171px; }
+  min-width: 7em; }
+  @media (min-width: 768px) {
+    .logo-container #logo {
+      min-width: 9.5em;
+      max-width: 171px; } }
 
-.copy {
-  margin-top: 13em; }
-  .copy h1,
-  .copy h2 {
-    margin-top: -0.52em;
-    margin-bottom: 0.07em; }
-  .copy h4 {
-    margin-top: 0.5em;
-    font-weight: 400; }
-  .copy p {
-    margin-top: 0.48em;
-    margin-bottom: 1.2em; }
-  .copy a {
-    font-weight: bold;
-    color: black; }
-    .copy a:hover {
-      text-decoration: none;
-      margin-top: 1em; }
-      .copy a:hover div h1,
-      .copy a:hover div h2 {
-        margin-bottom: 0em; }
-      .copy a:hover div p {
-        margin-top: 1.25em; }
-      .copy a:hover div a {
-        font-weight: bold;
-        color: black; }
-        .copy a:hover div a:hover {
-          text-decoration: none; }
+.hero .copy {
+  margin-top: 2.5em; }
+  @media (min-width: 768px) {
+    .hero .copy {
+      margin-top: 15em; } }
+
+.copy h1,
+.copy h2 {
+  margin-top: -0.52em;
+  margin-bottom: 0.07em; }
+
+.copy h4 {
+  margin-top: 0.5em;
+  font-weight: 400; }
+
+.copy p {
+  margin-top: 0.48em;
+  margin-bottom: 1.2em; }
+
+.copy a {
+  font-weight: bold;
+  color: black; }
+  .copy a:hover {
+    text-decoration: none;
+    margin-top: 1em; }
+    .copy a:hover div h1,
+    .copy a:hover div h2 {
+      margin-bottom: 0em; }
+    .copy a:hover div p {
+      margin-top: 1.25em; }
+    .copy a:hover div a {
+      font-weight: bold;
+      color: black; }
+      .copy a:hover div a:hover {
+        text-decoration: none; }
 
 .img div {
   height: 12.5em;
@@ -103,6 +120,18 @@ a {
 @media (min-width: 992px) {
   .brixwork {
     margin-top: -1em; } }
+
+.visier .copy div h2, .brixwork .copy div h2, .prohibition .copy div h2 {
+  padding-left: 8px; }
+
+.visier .copy div h2 {
+  background-color: deepskyblue; }
+
+.brixwork .copy div h2 {
+  background-color: indianred; }
+
+.prohibition .copy div h2 {
+  background-color: yellowgreen; }
 
 .frame {
   box-sizing: border-box;

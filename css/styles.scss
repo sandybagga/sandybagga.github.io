@@ -5,7 +5,7 @@ html * {
 }
 
 .container {
-    margin-top: 7.5em;
+    margin-top: 4.5em;
     position: relative;
     @media (min-width: 768px) {
         margin-top: 27vh;
@@ -13,7 +13,7 @@ html * {
 }
 
 h1 {
-    font-size: 2.25em;
+    font-size: 2.55em;
     letter-spacing: -0.0625em;
     @media (min-width: 768px) {
         font-size: 4em;
@@ -41,7 +41,10 @@ h3 {
 
 h4 {
     letter-spacing: -0.04em;
-    font-size: 1.45em;
+    font-size: 1.125em;
+    @media (min-width: 768px) {
+        font-size: 1.45em;
+    }
 }
 
 p {
@@ -55,18 +58,13 @@ p {
 hr {
     margin: 0em;
     background-color: black;
-    height: 12px;
     border: none;
-    max-width: 171px;
-    // @media (min-width: 768px) {
-    //     height: 12px;
-    // }
-    // @media (min-width: 992px) {
-    //     height: 10px;
-    // }
-    // @media (min-width: 1200px) {
-    //     height: 12px;
-    // }
+    height: 10px;
+    max-width: 7em;
+    @media (min-width: 768px) {
+        height: 12px;
+        max-width: 171px;
+    }
 }
 
 a {
@@ -76,15 +74,24 @@ a {
 
 .logo-container {
     #logo {
-        min-width: 9.5em;
-        //  @media (max-width: 768px) {
-        max-width: 171px;
-        // }
+        min-width: 7em;
+        @media (min-width: 768px) {
+            min-width: 9.5em;
+            //  @media (max-width: 768px) {
+            max-width: 171px;
+            // }
+        }
+    }
+}
+
+.hero .copy {
+    margin-top: 2.5em;
+    @media (min-width: 768px) {
+        margin-top: 15em;
     }
 }
 
 .copy {
-    margin-top: 13em;
     h1,
     h2 {
         margin-top: -0.52em;
@@ -144,6 +151,46 @@ a {
     }
 }
 
+.visier, .brixwork, .prohibition{
+    .copy{
+        div{
+            h2{
+                padding-left: 8px;
+            }
+        }
+    }
+}
+
+.visier{
+    .copy{
+        div{
+            h2{
+                background-color: deepskyblue;
+            }
+        }
+    }
+}
+
+.brixwork{
+    .copy{
+        div{
+            h2{
+                background-color: indianred;
+            }
+        }
+    }
+}
+
+.prohibition{
+    .copy{
+        div{
+            h2{
+                background-color: yellowgreen;
+            }
+        }
+    }
+}
+
 .frame {
     box-sizing: border-box;
     border: 12px solid black;
@@ -169,5 +216,3 @@ a {
     height: 50%;
     z-index: 99;
 }
-
-
