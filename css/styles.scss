@@ -151,40 +151,46 @@ a {
     }
 }
 
-.visier, .brixwork, .prohibition{
-    .copy{
-        div{
-            h2{
+.visier,
+.brixwork,
+.prohibition {
+    .copy {
+        div {
+            h2 {
                 padding-left: 8px;
+                padding-top: 2px;
+                @media (min-width: 768px) {
+                    padding-top: 0px;
+                }
             }
         }
     }
 }
 
-.visier{
-    .copy{
-        div{
-            h2{
+.visier {
+    .copy {
+        div {
+            h2 {
                 background-color: deepskyblue;
             }
         }
     }
 }
 
-.brixwork{
-    .copy{
-        div{
-            h2{
+.brixwork {
+    .copy {
+        div {
+            h2 {
                 background-color: indianred;
             }
         }
     }
 }
 
-.prohibition{
-    .copy{
-        div{
-            h2{
+.prohibition {
+    .copy {
+        div {
+            h2 {
                 background-color: yellowgreen;
             }
         }

@@ -121,8 +121,16 @@ a {
   .brixwork {
     margin-top: -1em; } }
 
-.visier .copy div h2, .brixwork .copy div h2, .prohibition .copy div h2 {
-  padding-left: 8px; }
+.visier .copy div h2,
+.brixwork .copy div h2,
+.prohibition .copy div h2 {
+  padding-left: 8px;
+  padding-top: 2px; }
+  @media (min-width: 768px) {
+    .visier .copy div h2,
+    .brixwork .copy div h2,
+    .prohibition .copy div h2 {
+      padding-top: 0px; } }
 
 .visier .copy div h2 {
   background-color: deepskyblue; }
