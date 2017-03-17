@@ -38,7 +38,7 @@ h4 {
   font-size: 1.125em; }
   @media (min-width: 768px) {
     h4 {
-      font-size: 1.45em; } }
+      font-size: 1.404em; } }
 
 p {
   font-size: 0.85em;
@@ -55,25 +55,27 @@ hr {
   max-width: 7em; }
   @media (min-width: 768px) {
     hr {
-      height: 12px;
-      max-width: 171px; } }
+      height: 10px;
+      max-width: 153px; } }
 
 a {
   font-weight: bold;
   color: black; }
 
 .logo-container #logo {
+  padding: 0.75em;
+  border: 9px solid black;
+  box-sizing: border-box;
   min-width: 7em; }
   @media (min-width: 768px) {
     .logo-container #logo {
-      min-width: 9.5em;
+      min-width: 8.5em;
+      border: 10px solid black;
+      padding: 1em;
       max-width: 171px; } }
 
 .hero .copy {
-  margin-top: 2.5em; }
-  @media (min-width: 768px) {
-    .hero .copy {
-      margin-top: 15em; } }
+  margin-top: 2em; }
 
 .copy h1,
 .copy h2 {
