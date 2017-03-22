@@ -121,13 +121,12 @@ a {
 
 @media (min-width: 992px) {
   .brixwork {
-    margin-top: -1em; } }
+    margin-top: 0em; } }
 
 .visier .copy div h2,
 .brixwork .copy div h2,
 .prohibition .copy div h2 {
-  padding-left: 8px;
-  padding-top: 2px; }
+  padding: 2px 0px 0px 8px; }
   @media (min-width: 768px) {
     .visier .copy div h2,
     .brixwork .copy div h2,
@@ -142,6 +141,11 @@ a {
 
 .prohibition .copy div h2 {
   background-color: yellowgreen; }
+
+footer {
+  background-color: black;
+  height: 32px;
+  margin-top: 15vh; }
 
 .frame {
   box-sizing: border-box;
