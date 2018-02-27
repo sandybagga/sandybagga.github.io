@@ -78,6 +78,8 @@ h1 {
     align-self: end; }
     .button1 h3, .button2 h3, .button3 h3 {
       font-size: 20pt; }
+    .button1:hover, .button2:hover, .button3:hover {
+      text-decoration: underline; }
   .button1 {
     grid-column: 1;
     text-align: left; }
