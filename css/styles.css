@@ -81,7 +81,7 @@ p {
     grid-column-end: 4; }
     .projects-container #visier-title h1 {
       text-align: left;
-      font-size: 20pt; }
+      font-size: 18pt; }
   .projects-container #visier-year {
     grid-row: 5;
     grid-column: 1;
