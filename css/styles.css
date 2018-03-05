@@ -1,6 +1,10 @@
 * {
   transition: all 0.15s ease; }
 
+a {
+  color: unset;
+  text-decoration: unset; }
+
 html,
 body {
   width: 100%;
@@ -11,85 +15,137 @@ h1 {
   text-align: center;
   height: inherit;
   font-size: 32pt;
-  line-height: 85%; }
+  line-height: 85%;
+  text-transform: uppercase;
+  margin: 0; }
+
+h2,
+h3,
+h4 {
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  display: inline;
+  box-sizing: border-box; }
+
+h2 {
+  font-size: 20pt;
+  font-weight: 700; }
+
+h3 {
+  font-size: 16pt;
+  font-weight: 400; }
+
+h4 {
+  font-family: 12pt;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+p {
+  font-family: 'Archivo', sans-serif;
+  margin: 0;
+  line-height: 148%; }
 
 .container {
-  height: 500px;
   max-width: 320px;
   display: grid;
-  margin: 4% auto 0em;
+  margin: 20% auto 0em; }
+
+.home-container {
+  grid-template-rows: 72px auto 64px 64px 64px;
+  grid-template-columns: 1fr; }
+  .home-container .logo {
+    grid-row: 2;
+    box-sizing: border-box;
+    padding: 22px;
+    border: 10px solid black;
+    margin: 32px 92px; }
+
+.projects-container {
   grid-template-rows: 1fr auto 64px 64px 64px;
   grid-template-columns: 1fr; }
 
 .title {
   grid-column: 1; }
 
-.logo {
-  grid-row: 2;
-  box-sizing: border-box;
-  padding: 22px;
-  border: 10px solid black;
-  margin: 32px 92px; }
-
-.button1,
-.button2,
-.button3 {
+.button {
   grid-column: 1;
-  font-family: "Roboto Mono", monospace;
-  font-size: 18pt;
   align-self: center;
   text-align: center; }
-  .button1 h3,
-  .button2 h3,
-  .button3 h3 {
-    margin: 0;
-    font-weight: 400;
-    font-size: 16pt;
-    display: inline;
-    box-sizing: border-box; }
 
-.button1 {
+#projects {
   grid-row: 3; }
 
-.button2 {
+#resume {
   grid-row: 4; }
 
-.button3 {
+#about {
   grid-row: 5; }
 
 @media (min-width: 960px) {
   .container {
     max-width: 600px;
     margin: 128px auto 0em;
+    grid-gap: 18px; }
+  h3 {
+    font-size: 20pt; }
+  .home-container {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 128px auto 64px;
-    grid-gap: 16px; }
-  h1 {
-    font-size: 52pt; }
-  .title {
-    grid-column-start: 1;
-    grid-column-end: 4; }
-  .logo {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    padding: 40px;
-    border: 22px solid black;
-    margin: 64px 152px; }
-  .button1, .button2, .button3 {
-    grid-row: 3;
+    grid-template-rows: 64px auto 64px; }
+    .home-container .title {
+      grid-column-start: 1;
+      grid-column-end: 4; }
+      .home-container .title h1 {
+        font-size: 52pt; }
+    .home-container .logo {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      padding: 40px;
+      border: 22px solid black;
+      margin: 64px 152px; }
+  .projects-container {
+    grid-template-rows: 64px 64px 32px 64px 128px 128px;
+    grid-template-columns: 64px 400px auto; }
+    .projects-container .logo {
+      border: 5px solid black;
+      padding: 7px; }
+    .projects-container .title {
+      grid-column-start: 1; }
+    .projects-container #visier-title {
+      grid-row: 3;
+      grid-column-start: 1;
+      grid-column-end: 4; }
+      .projects-container #visier-title h1 {
+        text-align: left; }
+    .projects-container #visier-year {
+      grid-row: 4;
+      grid-column: 1;
+      box-sizing: border-box;
+      border-bottom: 5px solid black; }
+    .projects-container #visier-body {
+      grid-row: 4;
+      grid-column: 2; }
+    .projects-container .read-more {
+      grid-column: 3;
+      align-self: end; }
+      .projects-container .read-more#visier-read-more {
+        grid-row: 4; }
+    .projects-container .soon {
+      grid-column: 1;
+      grid-row: 6;
+      color: #cecece; }
+  .button {
+    grid-row: 3 !important;
     align-self: end; }
-    .button1 h3, .button2 h3, .button3 h3 {
-      font-size: 20pt; }
-      .button1 h3:hover, .button2 h3:hover, .button3 h3:hover {
-        border-bottom: 3px solid black; }
-  .button1 {
+    .button h3:hover {
+      border-bottom: 3px solid black; }
+  #projects {
     grid-column: 1;
     text-align: left; }
-  .button2 {
+  #resume {
     grid-column: 2;
     text-align: center; }
-  .button3 {
+  #about {
     grid-column: 3;
     text-align: right; } }
