@@ -18,9 +18,135 @@
 </head>
 
 <body>
-    <div class="container home-container">
+    <div class="container project-container">
+        <div class="logo">
+            <a href="../index.html">
+                <svg version="1.1" id="logo" x="0px" y="0px" viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+                    <g id="XMLID_2_">
+                        <g id="XMLID_58_">
+                            <g id="XMLID_59_">
+                                <path id="XMLID_66_" d="M1016.7,246.6c-24.2,24.4-48.4,48.7-72.7,73.1c-238.6-240-625.5-240-864.1,0
+                                            C55.7,295.4,31.5,271,7.3,246.6C286-33.8,738-33.8,1016.7,246.6z" />
+                                <g id="XMLID_60_">
+                                    <g id="XMLID_61_">
+                                        <path id="XMLID_62_" d="M666.4,680.8l219.9,127.6l48-83.6L607.9,535.1l58.2-33.6l0.2,0.1l219.9,127.8l48-83.5L607.9,356.3
+                                                    l72.8-42.2l-48-83.5L512,300.7l-120.7-70.1l-48,83.5l72.8,42.2L89.8,545.9l48,83.5l219.9-127.8l58.4,33.9L89.8,725.1l48,83.5
+                                                    l219.9-127.8l58.4,33.9L89.8,904.2l48,83.5l374.1-217.4l0.1,0.1l374.2,217.3l48-83.6L607.9,714.3l58.3-33.6L666.4,680.8z
+                                                     M512,412l58.2,33.8l-58,33.8l-0.2-0.1l-58.4-33.7L512,412z M512.2,658.9l-0.2-0.1l-58.5-33.8l0.1-0.1l58.2-33.8l0.2,0.1
+                                                    l58.4,33.9L512.2,658.9z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
         <div class="title">
-            <h2>Modular UI Design</h2>
+            <h1>Modular UI Design</h1>
+        </div>
+        <div class="metadata" id="role">
+            <h4>Role</h4>
+            <p>UX/UI Designer</p>
+        </div>
+        <div class="metadata" id="highlight">
+            <h4>Project Highlight</h4>
+            <p>List View Componentization</p>
+        </div>
+        <div class="metadata" id="tools">
+            <h4>Tools</h4>
+            <p>Sketchbook + Pen</p>
+            <p>Adobe Illustrator CC</p>
+        </div>
+        <div class="metadata" id="skills">
+            <h4>Skills</h4>
+            <p>Information Architecture</p>
+            <p>User Journey Framework</p>
+        </div>
+        <div class="section-head" id="context">
+            <h3>Context</h3>
+        </div>
+        <div class="section-body" id="context-desc">
+            <p>Visier​ ​Inc.​ provides workforce intelligence solutions that are enabling a rapidly growing number of the world’s
+                best brands to maximize their business outcomes through their people. Visier’s solutions let organizations
+                understand and plan how to best and most cost-effectively recruit, retain, and develop their workforce.</p>
+            <p>NOTE:​ In compliance with my non-disclosure agreement with Visier, the screens highlighted in this case study
+                have been recreated as wireframes.</p>
+        </div>
+        <img src="../img/wfp.png" alt="Planning" id="planning">
+        <div class="img-desc" id="planning">
+            <p>Figure 1. Workforce Planning Wireframe (as of 2017)</p>
+        </div>
+        <img src="../img/wfa.png" alt="Analytics" id="analytics">
+        <div class="img-desc" id="analytics">
+            <p>Figure 2. Workforce Analytics Wireframe (as of 2017)</p>
+        </div>
+        <div class="section-head" id="challenge">
+            <h3>Design Challenge</h3>
+        </div>
+        <div class="section-body" id="challenge-desc">
+            <p>When I started my term at Visier, two of the flagship products, Workforce Planning (WFP) and Workforce Analytics
+                (WFA) displayed plans and analyses, respectively, as a list. These lists, however, were not consistent in
+                their information architecture: plans (fig. 1) were listed in multiple buckets with multiple points of metadata,
+                whereas analyses (fig. 2) were listed as simplified links. Additionally, WFP was being ported to the platform
+                upon which WFA was based.</p>
+        </div>
+        <img src="../img/terms.png" alt="Reconciling Terms" id="terms">
+        <div class="img-desc" id="terms">
+            <p>Figure 3. Reconciling metadata between plans and analyses.</p>
+        </div>
+        <div class="section-head" id="approach">
+            <h3>Design Approach</h3>
+        </div>
+        <div class="section-body" id="approach-desc">
+            <p>In an effort to bring a modular UX design approach to the organization, I worked to design a consistent information
+                architecture for showing items as a list. The first step towards achieving this was to extract out points
+                of metadata (fig. 3) and actions common to list items in each product. I subsequently took measures to ensure
+                that this component was reusable in its implementation, which included prototyping, as well as making sure
+                that the interface was flexible enough to respond to novel contexts and potential visual redesigns.</p>
+        </div>
+        <div class="section-head" id="roadblock">
+            <h3>Roadblock</h3>
+        </div>
+        <div class="section-body" id="roadblock-desc">
+            <p>In WFP, users can share plans with other users, as well as assign them to users as tasks. To manage the multiple
+                scenarios (eg. plans the user has assigned, plans assigned to the user, plans the user has shared with another,
+                and so on), the information architecture was split up into multiple buckets, one per such a case. Although
+                search worked across all the buckets, this made navigation, scanning, and performing batch actions unintuitive.</p>
+        </div>
+        <div class="section-head" id="detour">
+            <h3>Detour</h3>
+        </div>
+        <div class="section-body" id="detour-desc">
+            <p>In collaboration with the stakeholders, I made the decision introduce a more robust notion of authorship​. It
+                was agreed that the bucketing system needed to be retained. But with the introduction of authorship it could
+                be tempered. For instance, “My Plans” and “Plans shared with me” could be listed under “Plans” and distinguished
+                by supplementarily surfacing the author of the plan.</p>
+        </div>
+        <img src="../img/workflow.png" alt="Workflow" id="workflow">
+        <div class="img-desc" id="workflow">
+            <p>Figure 4. Workflow chosen as a stress test.</p>
+        </div>
+        <div class="section-head" id="workflow">
+            <h3>Workflow</h3>
+        </div>
+        <div class="section-body" id="workflow-desc">
+            <p>Rather than stress testing the completed using a complex workflow, I started with said complex workflow (fig.
+                4) and circumambulated it to ensure that the design serves its purpose.</p>
+        </div>
+        <img src="../img/final.png" alt="Final Wireframe" id="final">
+        <div class="img-desc" id="final">
+            <p>Figure 5. Final Wireframe for WFP.</p>
+        </div>
+        <div class="section-head" id="takeaway">
+            <h3>The Takeaway</h3>
+        </div>
+        <div class="section-body" id="takeaway-desc">
+            <p>The reorganization of the information architecture, the introduction of authorship, and a new complex workflow
+                culminated in the completion of the final spec (fig 5). The project imparted knowledge on designing microinteractions
+                under an overarching narrative and a modular approach to UX design that results in reusable components that
+                are effective, yet efficient.</p>
         </div>
     </div>
 </body>

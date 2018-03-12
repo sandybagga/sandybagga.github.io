@@ -46,35 +46,48 @@ p {
   line-height: 148%; }
 
 .container {
-  max-width: 320px;
   display: grid;
-  margin: 20% auto 0em; }
+  margin: 20% auto 64px; }
 
 .home-container {
   grid-template-rows: 72px auto 64px 64px 64px;
-  grid-template-columns: 1fr; }
+  grid-template-columns: 1fr;
+  max-width: 320px; }
   .home-container .logo {
     grid-row: 2;
     box-sizing: border-box;
     padding: 22px;
     border: 10px solid black;
     margin: 32px 92px; }
+  .home-container .title {
+    grid-column: 1; }
+  .home-container .button {
+    grid-column: 1;
+    align-self: center;
+    text-align: center; }
+    .home-container .button h3 {
+      font-weight: 400; }
+  .home-container #projects {
+    grid-row: 3; }
+  .home-container #resume {
+    grid-row: 4; }
+  .home-container #about {
+    grid-row: 5; }
 
 .projects-container {
   grid-template-rows: 64px 64px 32px 100px auto 64px;
-  grid-template-columns: 128px 64px 128px; }
+  grid-template-columns: 64px auto;
+  max-width: 340px; }
   .projects-container .logo {
     border: 5px solid black;
     box-sizing: border-box;
     padding: 7px;
-    margin: 5px;
+    margin: 5px 10px 5px 0;
     grid-row: 1;
-    grid-column: 2; }
+    grid-column: 1; }
   .projects-container .title {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row: 2;
-    text-align: center; }
+    grid-column: 1;
+    grid-row: 2; }
   .projects-container #visier-title {
     grid-row: 3;
     grid-column-start: 1;
@@ -85,8 +98,7 @@ p {
   .projects-container #visier-year {
     grid-row: 5;
     grid-column: 1;
-    box-sizing: border-box;
-    border-bottom: 5px solid black; }
+    box-sizing: border-box; }
   .projects-container #visier-body {
     grid-row: 4;
     grid-column-start: 1;
@@ -104,27 +116,45 @@ p {
     align-self: end;
     color: #cecece; }
 
-.title {
-  grid-column: 1; }
-
-.button {
-  grid-column: 1;
-  align-self: center;
-  text-align: center; }
-
-#projects {
-  grid-row: 3; }
-
-#resume {
-  grid-row: 4; }
-
-#about {
-  grid-row: 5; }
+.project-container {
+  max-width: 400px;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 8px; }
+  .project-container .logo {
+    border: 5px solid black;
+    padding: 7px;
+    grid-row: 1;
+    grid-column: span 2;
+    height: 32px;
+    margin: 5px 10px 5px 0;
+    width: 32px; }
+  .project-container .section-head,
+  .project-container .section-body {
+    grid-column: span 2; }
+  .project-container .title {
+    grid-column: span 2;
+    margin-bottom: 16px; }
+    .project-container .title h1 {
+      text-align: left; }
+  .project-container img {
+    margin: 32px auto 0;
+    grid-column: span 2;
+    width: 100%; }
+    .project-container img#workflow {
+      width: 60%; }
+  .project-container .img-desc {
+    margin-bottom: 32px;
+    grid-column: span 2; }
+    .project-container .img-desc p {
+      font-size: 10pt;
+      text-align: center; }
+  .project-container .section-head {
+    margin-top: 16px; }
 
 @media (min-width: 960px) {
   .container {
     max-width: 600px;
-    margin: 128px auto 0em;
+    margin: 128px auto 64px;
     grid-gap: 18px; }
   h3 {
     font-size: 20pt; }
@@ -144,6 +174,20 @@ p {
       padding: 40px;
       border: 22px solid black;
       margin: 64px 152px; }
+    .home-container .button {
+      grid-row: 3 !important;
+      align-self: end; }
+      .home-container .button h3:hover {
+        border-bottom: 3px solid black; }
+    .home-container #projects {
+      grid-column: 1;
+      text-align: left; }
+    .home-container #resume {
+      grid-column: 2;
+      text-align: center; }
+    .home-container #about {
+      grid-column: 3;
+      text-align: right; }
   .projects-container {
     grid-template-rows: 64px 64px 32px 64px 128px 128px;
     grid-template-columns: 64px 400px auto; }
@@ -154,14 +198,14 @@ p {
       grid-row: 1; }
     .projects-container .title {
       grid-column-start: 1;
+      justify-self: unset;
       text-align: left; }
     .projects-container #visier-title h1 {
       font-size: 32pt; }
     .projects-container #visier-year {
       grid-row: 4;
       grid-column: 1;
-      box-sizing: border-box;
-      border-bottom: 5px solid black; }
+      box-sizing: border-box; }
     .projects-container #visier-body {
       grid-row: 4;
       grid-column: 2; }
@@ -173,17 +217,47 @@ p {
     .projects-container .soon {
       grid-column: 1;
       grid-row: 6; }
-  .button {
-    grid-row: 3 !important;
-    align-self: end; }
-    .button h3:hover {
-      border-bottom: 3px solid black; }
-  #projects {
-    grid-column: 1;
-    text-align: left; }
-  #resume {
-    grid-column: 2;
-    text-align: center; }
-  #about {
-    grid-column: 3;
-    text-align: right; } }
+  .project-container {
+    grid-template-columns: 1fr 1fr;
+    max-width: 768px; }
+    .project-container .logo {
+      border: 5px solid black;
+      padding: 7px;
+      grid-row: 1;
+      grid-column: span 2;
+      height: 32px;
+      margin: 5px 10px 5px 0;
+      width: 32px; }
+    .project-container .title {
+      height: 64px;
+      grid-row: 2;
+      grid-column: span 2; }
+      .project-container .title h1 {
+        font-size: 36pt;
+        text-align: left; }
+    .project-container img {
+      margin: 32px auto 0px;
+      width: 100%;
+      align-self: center; }
+      .project-container img#planning, .project-container img#analytics {
+        grid-row: 7; }
+      .project-container img#terms, .project-container img#final {
+        width: 75%; }
+      .project-container img#workflow {
+        width: 35%; }
+    .project-container .img-desc {
+      margin-bottom: 32px; }
+      .project-container .img-desc p {
+        font-size: 10pt;
+        text-align: center; }
+      .project-container .img-desc#terms, .project-container .img-desc#workflow, .project-container .img-desc#final {
+        grid-column: span 2; }
+    .project-container #planning {
+      grid-column: 1; }
+    .project-container #analytics {
+      grid-column: 2; }
+    .project-container .metadata {
+      grid-column: span 1; }
+    .project-container .section-head,
+    .project-container .section-body {
+      grid-column: span 2; } }
