@@ -92,7 +92,7 @@ p {
 	}
 }
 
-.projects-container {
+.projects-container, .about-container {
 	grid-template-rows: 64px 64px 32px 100px auto 64px;
 	grid-template-columns: 64px auto;
 	max-width: 340px;
@@ -140,7 +140,16 @@ p {
 		grid-column-end: 4;
 		grid-row: 6;
 		align-self: end;
-		color: rgb(206, 206, 206);
+		color: rgba($color: #000000, $alpha: 0.2);
+	}
+}
+
+.about-container{
+	grid-template-rows: 64px 64px 32px auto auto 64px;
+	.soon{
+		h3:hover{
+			color: rgba($color: #000000, $alpha: 1.0);
+		}
 	}
 }
 
@@ -239,7 +248,7 @@ p {
 			text-align: right;
 		}
 	}
-	.projects-container {
+	.projects-container, .about-container {
 		grid-template-rows: 64px 64px 32px 64px 128px 128px;
 		grid-template-columns: 64px 400px auto;
 		.logo {

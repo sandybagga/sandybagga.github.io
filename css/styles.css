@@ -74,47 +74,52 @@ p {
   .home-container #about {
     grid-row: 5; }
 
-.projects-container {
+.projects-container, .about-container {
   grid-template-rows: 64px 64px 32px 100px auto 64px;
   grid-template-columns: 64px auto;
   max-width: 340px; }
-  .projects-container .logo {
+  .projects-container .logo, .about-container .logo {
     border: 5px solid black;
     box-sizing: border-box;
     padding: 7px;
     margin: 5px 10px 5px 0;
     grid-row: 1;
     grid-column: 1; }
-  .projects-container .title {
+  .projects-container .title, .about-container .title {
     grid-column: 1;
     grid-row: 2; }
-  .projects-container #visier-title {
+  .projects-container #visier-title, .about-container #visier-title {
     grid-row: 3;
     grid-column-start: 1;
     grid-column-end: 4; }
-    .projects-container #visier-title h1 {
+    .projects-container #visier-title h1, .about-container #visier-title h1 {
       text-align: left;
       font-size: 18pt; }
-  .projects-container #visier-year {
+  .projects-container #visier-year, .about-container #visier-year {
     grid-row: 5;
     grid-column: 1;
     box-sizing: border-box; }
-  .projects-container #visier-body {
+  .projects-container #visier-body, .about-container #visier-body {
     grid-row: 4;
     grid-column-start: 1;
     grid-column-end: 4; }
-  .projects-container .read-more {
+  .projects-container .read-more, .about-container .read-more {
     grid-column: 3;
     align-self: end;
     text-align: right; }
-    .projects-container .read-more#visier-read-more {
+    .projects-container .read-more#visier-read-more, .about-container .read-more#visier-read-more {
       grid-row: 5; }
-  .projects-container .soon {
+  .projects-container .soon, .about-container .soon {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row: 6;
     align-self: end;
-    color: #cecece; }
+    color: rgba(0, 0, 0, 0.2); }
+
+.about-container {
+  grid-template-rows: 64px 64px 32px auto auto 64px; }
+  .about-container .soon h3:hover {
+    color: black; }
 
 .project-container {
   max-width: 400px;
@@ -188,33 +193,33 @@ p {
     .home-container #about {
       grid-column: 3;
       text-align: right; }
-  .projects-container {
+  .projects-container, .about-container {
     grid-template-rows: 64px 64px 32px 64px 128px 128px;
     grid-template-columns: 64px 400px auto; }
-    .projects-container .logo {
+    .projects-container .logo, .about-container .logo {
       border: 5px solid black;
       padding: 7px;
       grid-column: 1;
       grid-row: 1; }
-    .projects-container .title {
+    .projects-container .title, .about-container .title {
       grid-column-start: 1;
       justify-self: unset;
       text-align: left; }
-    .projects-container #visier-title h1 {
+    .projects-container #visier-title h1, .about-container #visier-title h1 {
       font-size: 32pt; }
-    .projects-container #visier-year {
+    .projects-container #visier-year, .about-container #visier-year {
       grid-row: 4;
       grid-column: 1;
       box-sizing: border-box; }
-    .projects-container #visier-body {
+    .projects-container #visier-body, .about-container #visier-body {
       grid-row: 4;
       grid-column: 2; }
-    .projects-container .read-more {
+    .projects-container .read-more, .about-container .read-more {
       grid-column: 3;
       align-self: end; }
-      .projects-container .read-more#visier-read-more {
+      .projects-container .read-more#visier-read-more, .about-container .read-more#visier-read-more {
         grid-row: 4; }
-    .projects-container .soon {
+    .projects-container .soon, .about-container .soon {
       grid-column: 1;
       grid-row: 6; }
   .project-container {
