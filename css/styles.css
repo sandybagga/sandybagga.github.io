@@ -140,7 +140,8 @@ p {
     grid-column: span 2;
     margin-bottom: 16px; }
     .project-container .title h1 {
-      text-align: left; }
+      text-align: left;
+      font-size: 18pt; }
   .project-container img {
     margin: 32px auto 0;
     grid-column: span 2;
