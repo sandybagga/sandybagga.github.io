@@ -12,7 +12,6 @@ body {
 
 h1 {
   font-family: "Archivo Black", arial, sans-serif;
-  text-align: center;
   height: inherit;
   font-size: 24pt;
   line-height: 85%;
@@ -142,6 +141,8 @@ p {
     .project-container .title h1 {
       text-align: left;
       font-size: 18pt; }
+  .project-container .metadata p {
+    font-size: 10pt; }
   .project-container img {
     margin: 32px auto 0;
     grid-column: span 2;
@@ -165,21 +166,20 @@ p {
   h3 {
     font-size: 20pt; }
   .home-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 64px 1fr 1fr 1fr;
     grid-template-rows: 64px auto 64px; }
     .home-container .title {
       grid-column-start: 1;
-      grid-column-end: 4; }
+      grid-column-end: 5; }
       .home-container .title h1 {
         font-size: 52pt; }
     .home-container .logo {
       grid-column-start: 1;
-      grid-column-end: 4;
+      grid-column-end: 3;
       grid-row-start: 2;
       grid-row-end: 3;
-      padding: 40px;
       border: 22px solid black;
-      margin: 64px 152px; }
+      margin: 64px 0px; }
     .home-container .button {
       grid-row: 3 !important;
       align-self: end; }
@@ -224,29 +224,31 @@ p {
       grid-column: 1;
       grid-row: 6; }
   .project-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 64px 1fr 1fr;
     max-width: 768px; }
     .project-container .logo {
       border: 5px solid black;
       padding: 7px;
-      grid-row: 1;
-      grid-column: span 2;
+      grid-row: 1 / span 5;
+      grid-column: 1;
       height: 32px;
       margin: 5px 10px 5px 0;
       width: 32px; }
     .project-container .title {
-      height: 64px;
-      grid-row: 2;
-      grid-column: span 2; }
+      grid-row: 1;
+      grid-column: 2 / span 2;
+      align-self: end; }
       .project-container .title h1 {
         font-size: 36pt;
         text-align: left; }
+    .project-container .metadata p {
+      font-size: 12pt; }
     .project-container img {
       margin: 32px auto 0px;
       width: 100%;
       align-self: center; }
       .project-container img#planning, .project-container img#analytics {
-        grid-row: 7; }
+        grid-row: 6; }
       .project-container img#terms, .project-container img#final {
         width: 75%; }
       .project-container img#workflow {
@@ -259,9 +261,9 @@ p {
       .project-container .img-desc#terms, .project-container .img-desc#workflow, .project-container .img-desc#final {
         grid-column: span 2; }
     .project-container #planning {
-      grid-column: 1; }
-    .project-container #analytics {
       grid-column: 2; }
+    .project-container #analytics {
+      grid-column: 3; }
     .project-container .metadata {
       grid-column: span 1; }
     .project-container .section-head,
