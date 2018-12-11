@@ -927,11 +927,11 @@ section .section-content#visier-solution #fig-5 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: fig-5;
-  max-width: 15rem;
+  max-width: 17rem;
 }
 
 section .section-content#visier-solution #fig-5 img {
-  max-width: 17rem;
+  max-width: 15rem;
   padding: 16px;
   background-color: white;
 }
