@@ -175,6 +175,11 @@ code {
   grid-area: pEdu;
 }
 
+.main-wrap#home-wrap #home-main p:nth-of-type(2) a {
+  font-size: 0.65em;
+  display: block;
+}
+
 .main-wrap#home-wrap #home-main #more-about {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
@@ -492,12 +497,23 @@ header#makercube {
 }
 
 header#visier {
-  background-image: url("../img/visier/header.png");
+  background-image: url("../img/visier/header.jpg");
   background-position: center top;
 }
 
 @media screen and (min-width: 50rem) {
   header#visier {
+        grid-template-areas: "c c ." "m1 m2 m3";
+  }
+}
+
+header#nordic {
+  background-image: url("../img/nordic/header1.jpg");
+  background-position: right top;
+}
+
+@media screen and (min-width: 50rem) {
+  header#nordic {
         grid-template-areas: "c c ." "m1 m2 m3";
   }
 }
@@ -574,26 +590,62 @@ section .section-content .img figcaption span {
   font-size: 1.25em;
 }
 
-section .section-content#brief {
-      grid-template-areas: "p1" "fig-1" "p2" "links";
-}
-
-section .section-content#brief .p1 {
+section .section-content .p1 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: p1;
 }
 
-section .section-content#brief .p2 {
-  -ms-grid-row: 3;
+section .section-content #fig-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: fig-1;
+}
+
+section .section-content .p2 {
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: p2;
 }
 
-section .section-content#brief #fig-1 {
+section .section-content .p3 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: p3;
+}
+
+section .section-content #fig-2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: fig-2;
+}
+
+section .section-content #fig-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: fig-3;
+}
+
+section .section-content #fig-4 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: fig-1;
+  grid-area: fig-4;
+}
+
+section .section-content #fig-5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: fig-5;
+}
+
+section .section-content #fig-6 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: fig-6;
+}
+
+section .section-content#brief {
+      grid-template-areas: "p1" "fig-1" "p2" "links";
 }
 
 section .section-content#brief .links {
@@ -633,36 +685,6 @@ section .section-content#research {
       grid-template-areas: "p1" "fig-2" "p2" "fig-3" "p3";
 }
 
-section .section-content#research .p1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: p1;
-}
-
-section .section-content#research .p2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: p2;
-}
-
-section .section-content#research .p3 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: p3;
-}
-
-section .section-content#research #fig-2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: fig-2;
-}
-
-section .section-content#research #fig-3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: fig-3;
-}
-
 @media screen and (min-width: 50rem) {
   section .section-content#research {
         grid-template-areas: "p1 p1 . ." "fig-2 fig-2 p2 ." "fig-3 fig-3 p3 p3";
@@ -690,41 +712,18 @@ section .section-content#solution {
       grid-template-areas: "p1" "fig-4" "p2" "fig-5" "p3";
 }
 
-section .section-content#solution .p1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: p1;
-}
-
 section .section-content#solution .p2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: p2;
   -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
       align-self: end;
 }
 
-section .section-content#solution .p3 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: p3;
-}
-
 section .section-content#solution #fig-4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: fig-4;
   max-width: 15rem;
 }
 
 section .section-content#solution #fig-4 img {
   max-width: 15rem;
-}
-
-section .section-content#solution #fig-5 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: fig-5;
 }
 
 section .section-content#solution .img img {
@@ -791,30 +790,6 @@ section .section-content#challenge {
       grid-template-areas: "p1" "fig-2" "fig-3";
 }
 
-section .section-content#challenge .p1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: p1;
-}
-
-section .section-content#challenge .p2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: p2;
-}
-
-section .section-content#challenge #fig-2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: fig-2;
-}
-
-section .section-content#challenge #fig-3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: fig-3;
-}
-
 @media screen and (min-width: 50rem) {
   section .section-content#challenge {
         grid-template-areas: "fig-2 fig-2 ." "fig-3 fig-3 ." ". p1 p1";
@@ -842,30 +817,10 @@ section .section-content#approach {
       grid-template-areas: "p1" "fig-4" "p2";
 }
 
-section .section-content#approach .p1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: p1;
-}
-
 section .section-content#approach .p2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: p2;
   -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
       align-self: end;
-}
-
-section .section-content#approach .p3 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: p3;
-}
-
-section .section-content#approach #fig-4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: fig-4;
 }
 
 section .section-content#approach .img img {
@@ -905,28 +860,7 @@ section .section-content#visier-solution {
       grid-template-areas: "p1" "fig-5" "p2";
 }
 
-section .section-content#visier-solution .p1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: p1;
-}
-
-section .section-content#visier-solution .p2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: p2;
-}
-
-section .section-content#visier-solution .p3 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: p3;
-}
-
 section .section-content#visier-solution #fig-5 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: fig-5;
   max-width: 17rem;
 }
 
@@ -962,23 +896,57 @@ section .section-content#visier-summary {
 }
 
 section .section-content#visier-summary .p1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: p1;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-section .section-content#visier-summary #fig-6 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: fig-6;
-}
-
 @media screen and (min-width: 80rem) {
   section .section-content#visier-summary {
         grid-template-areas: "fig-6 p1";
+    width: unset;
+    margin: initial;
+  }
+}
+
+section .section-content#nordic-brief {
+      grid-template-areas: "p1" "fig-1" "p2";
+}
+
+section .section-content#nordic-brief #fig-1 {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 50rem) {
+  section .section-content#nordic-brief {
+        grid-template-areas: "p1 p2";
+  }
+}
+
+section .section-content#process {
+      grid-template-areas: "fig-" "p1" "fig-2" "p2";
+}
+
+@media screen and (min-width: 50rem) {
+  section .section-content#process {
+        grid-template-areas: "fig-1 fig-1 fig-1 fig-2 fig-2" "p1 p1 p2 p2 p2";
+  }
+}
+
+section .section-content#nordic-summary {
+      grid-template-areas: "fig-3" "p1";
+  margin-bottom: 5vh;
+}
+
+section .section-content#nordic-summary .p1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (min-width: 80rem) {
+  section .section-content#nordic-summary {
+        grid-template-areas: "fig-3 p1";
     width: unset;
     margin: initial;
   }

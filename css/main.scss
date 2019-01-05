@@ -172,6 +172,10 @@ code {
                 }
                 &:nth-of-type(2) {
                     grid-area: pEdu;
+                    a{
+                        font-size: 0.65em;
+                        display: block;
+                    }
                 }
             }
             #more-about {
@@ -406,8 +410,17 @@ header {
         }
     }
     &#visier{
-        background-image: url('../img/visier/header.png');
+        background-image: url('../img/visier/header.jpg');
         background-position: center top;
+        @media screen and (min-width: 50rem) {
+            grid-template-areas: "c c ." "m1 m2 m3";
+        }
+        @media screen and (min-width:80rem) {
+        }
+    }
+    &#nordic{
+        background-image: url('../img/nordic/header1.jpg');
+        background-position: right top;
         @media screen and (min-width: 50rem) {
             grid-template-areas: "c c ." "m1 m2 m3";
         }
@@ -463,17 +476,29 @@ section {
                 }
             }
         }
+        .p1 { grid-area: p1; }
+        #fig-1 { grid-area: fig-1; }
+        .p2 { grid-area: p2; }
+        .p3 {
+            grid-area: p3;
+        }
+        #fig-2 {
+            grid-area: fig-2;
+        }
+        #fig-3 {
+            grid-area: fig-3;
+        }
+        #fig-4{
+            grid-area: fig-4;
+        }
+        #fig-5 {
+            grid-area: fig-5;
+        }
+        #fig-6 {
+            grid-area: fig-6;
+        }
         &#brief {
             grid-template-areas: "p1" "fig-1" "p2" "links";
-            .p1 {
-                grid-area: p1;
-            }
-            .p2 {
-                grid-area: p2;
-            }
-            #fig-1 {
-                grid-area: fig-1;
-            }
             .links {
                 grid-area: links;
                 align-self: end;
@@ -496,21 +521,7 @@ section {
         }
         &#research {
             grid-template-areas: "p1" "fig-2" "p2" "fig-3" "p3";
-            .p1 {
-                grid-area: p1;
-            }
-            .p2 {
-                grid-area: p2;
-            }
-            .p3 {
-                grid-area: p3;
-            }
-            #fig-2 {
-                grid-area: fig-2;
-            }
-            #fig-3 {
-                grid-area: fig-3;
-            }
+
             @media screen and (min-width: 50rem) {
                 grid-template-areas: "p1 p1 . ." "fig-2 fig-2 p2 ." "fig-3 fig-3 p3 p3";
                 .img {
@@ -528,26 +539,16 @@ section {
         }
         &#solution {
             grid-template-areas: "p1" "fig-4" "p2" "fig-5" "p3";
-            .p1 {
-                grid-area: p1;
-            }
             .p2 {
-                grid-area: p2;
                 align-self: end;
             }
-            .p3 {
-                grid-area: p3;
-            }
             #fig-4 {
-                grid-area: fig-4;
                 max-width: 15rem;
                 img {
                     max-width: 15rem;
                 }
             }
-            #fig-5 {
-                grid-area: fig-5;
-            }
+
             .img {
                 img {
                     width: 100%;
@@ -592,18 +593,6 @@ section {
         }
         &#challenge {
             grid-template-areas: "p1" "fig-2" "fig-3";
-            .p1 {
-                grid-area: p1;
-            }
-            .p2 {
-                grid-area: p2;
-            }
-            #fig-2 {
-                grid-area: fig-2;
-            }
-            #fig-3 {
-                grid-area: fig-3;
-            }
             @media screen and (min-width: 50rem) {
                 grid-template-areas: "fig-2 fig-2 ." "fig-3 fig-3 ." ". p1 p1";
                 .img {
@@ -621,18 +610,9 @@ section {
         }
         &#approach {
             grid-template-areas: "p1" "fig-4" "p2";
-            .p1 {
-                grid-area: p1;
-            }
+            
             .p2 {
-                grid-area: p2;
                 align-self: end;
-            }
-            .p3 {
-                grid-area: p3;
-            }
-            #fig-4 {
-                grid-area: fig-4;
             }
             .img {
                 img {
@@ -662,17 +642,7 @@ section {
         }
         &#visier-solution {
             grid-template-areas: "p1" "fig-5" "p2";
-            .p1 {
-                grid-area: p1;
-            }
-            .p2 {
-                grid-area: p2;
-            }
-            .p3 {
-                grid-area: p3;
-            }
             #fig-5 {
-                grid-area: fig-5;
                 max-width: 17rem;
                 img {
                     max-width: 15rem;
@@ -700,14 +670,37 @@ section {
             grid-template-areas: "fig-6" "p1";
             margin-bottom: 5vh;
             .p1 {
-                grid-area: p1;
                 align-self: center;
-            }
-            #fig-6 {
-                grid-area: fig-6;
             }
             @media screen and (min-width: 80rem) {
                 grid-template-areas: "fig-6 p1";
+                width: unset;
+                margin: initial;
+            }
+        }
+        &#nordic-brief{
+            grid-template-areas: "p1" "fig-1" "p2";
+            #fig-1{
+                margin: 0 auto;
+            }
+            @media screen and (min-width: 50rem){
+                grid-template-areas: "p1 p2";
+            }
+        }
+        &#process{
+            grid-template-areas: "fig-" "p1" "fig-2" "p2";
+            @media screen and (min-width: 50rem) {
+                grid-template-areas: "fig-1 fig-1 fig-1 fig-2 fig-2" "p1 p1 p2 p2 p2";
+            }
+        }
+        &#nordic-summary {
+            grid-template-areas: "fig-3" "p1";
+            margin-bottom: 5vh;
+            .p1 {
+                align-self: center;
+            }
+            @media screen and (min-width: 80rem) {
+                grid-template-areas: "fig-3 p1";
                 width: unset;
                 margin: initial;
             }
