@@ -597,7 +597,7 @@ section .section-content .p1 {
 }
 
 section .section-content #fig-1 {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: fig-1;
 }
@@ -924,7 +924,7 @@ section .section-content#nordic-brief #fig-1 {
 }
 
 section .section-content#process {
-      grid-template-areas: "fig-" "p1" "fig-2" "p2";
+      grid-template-areas: "fig-1" "p1" "fig-2" "p2";
 }
 
 @media screen and (min-width: 50rem) {

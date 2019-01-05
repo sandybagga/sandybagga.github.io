@@ -688,7 +688,7 @@ section {
             }
         }
         &#process{
-            grid-template-areas: "fig-" "p1" "fig-2" "p2";
+            grid-template-areas: "fig-1" "p1" "fig-2" "p2";
             @media screen and (min-width: 50rem) {
                 grid-template-areas: "fig-1 fig-1 fig-1 fig-2 fig-2" "p1 p1 p2 p2 p2";
             }
