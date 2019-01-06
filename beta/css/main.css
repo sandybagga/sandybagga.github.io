@@ -269,6 +269,7 @@ footer h4 {
   width: 100%;
   overflow-x: scroll;
   margin-bottom: 25vh;
+  -webkit-overflow-scrolling: touch;
 }
 
 #projects {
