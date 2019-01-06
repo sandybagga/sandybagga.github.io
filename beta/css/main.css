@@ -1,0 +1,398 @@
+@import url("https://use.typekit.net/can2owv.css");
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  font-family: nimbus-sans, Helvetica, Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  color: #00345c;
+  letter-spacing: 0.0em;
+}
+
+h1,
+h2 {
+  font-family: nimbus-sans, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.6em;
+  line-height: 120%;
+  font-weight: 700;
+  max-width: 80vw;
+}
+
+@media only screen and (min-width: 437px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+h4.sentence {
+  text-transform: none;
+}
+
+@media only screen and (min-width: 437px) {
+  h4 {
+    font-size: 1.2em;
+  }
+}
+
+p {
+  font-weight: 500;
+  font-size: 1.1em;
+  line-height: 130%;
+}
+
+a {
+  text-underline-position: under;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+body,
+#wrap {
+  background-color: #fdfdef;
+}
+
+#wrap {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+#logo {
+  border-color: #00345c;
+}
+
+#logo svg {
+  fill: #00345c;
+}
+
+#logo * {
+  -webkit-transition: none;
+  transition: none;
+}
+
+#logo:hover {
+  background-color: #00345c;
+}
+
+#logo:hover svg {
+  fill: #fdfdef;
+}
+
+#land, nav {
+  padding: 0 7vw;
+}
+
+#land {
+  min-height: 90vh;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+#top {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -ms-grid;
+  display: grid;
+}
+
+.heading {
+  display: inline-block;
+}
+
+.button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.button h4 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+nav {
+  height: 40vh;
+}
+
+footer {
+  width: 100%;
+  padding-bottom: 3vh;
+}
+
+footer h4 {
+  display: block;
+  font-size: 0.65rem;
+  margin: 0 auto 0.5em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 437px) {
+  footer h4 {
+    font-size: 0.75em;
+  }
+}
+
+#top {
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+}
+
+#top #logo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 5rem;
+  border: 0.35rem solid #00345c;
+  padding: 0.65rem;
+  display: inline-block;
+  margin: 5vh 0 1vh;
+}
+
+@media only screen and (min-width: 1024px) {
+  #top #logo {
+    width: 7rem;
+    border-width: 0.5rem;
+    padding: 0.95rem;
+    margin-top: 10vh;
+  }
+}
+
+#top #seeking {
+  max-width: 25ch;
+}
+
+@media only screen and (min-width: 437px) {
+  #top #seeking {
+    max-width: none;
+  }
+}
+
+#my {
+  margin-top: 15vh;
+  max-width: 25ch;
+}
+
+@media only screen and (min-width: 437px) {
+  #my {
+    max-width: 30ch;
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #my {
+    font-size: 2.85em;
+  }
+}
+
+#middle {
+  margin: 0 0 4vh;
+}
+
+#middle #desc {
+  max-width: 45ch;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 720px) {
+  .grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+#project-wrap h4 {
+  padding-left: 7vw;
+}
+
+#project-container {
+  width: 100%;
+  overflow-x: scroll;
+  margin-bottom: 25vh;
+}
+
+#projects {
+  margin-bottom: 5vh;
+  width: 268vw;
+  -ms-grid-columns: (80vw)[3];
+      grid-template-columns: repeat(3, 80vw);
+  padding: 0 7vw;
+  -webkit-overflow-scrolling: touch;
+  grid-gap: 7vw;
+}
+
+@media only screen and (min-width: 640px) {
+  #projects {
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+    width: auto;
+    grid-gap: 2vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #projects {
+    -ms-grid-columns: (3fr)[3];
+        grid-template-columns: repeat(3, 3fr);
+  }
+}
+
+.project {
+  text-decoration: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1.25fr 1fr;
+      grid-template-rows: 1.25fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-shadow: 0px 0.2em 2em rgba(0, 52, 92, 0.4);
+          box-shadow: 0px 0.2em 2em rgba(0, 52, 92, 0.4);
+  border-radius: 0.2em;
+}
+
+@media only screen and (min-width: 640px) {
+  .project {
+    -ms-grid-rows: 2fr 1fr;
+        grid-template-rows: 2fr 1fr;
+  }
+}
+
+.project:hover {
+  -webkit-box-shadow: 0px 0.2em 4em rgba(0, 52, 92, 0.4);
+          box-shadow: 0px 0.2em 4em rgba(0, 52, 92, 0.4);
+}
+
+.project:hover .img {
+  background-color: black;
+}
+
+.project:hover span {
+  margin-left: 1em;
+}
+
+.img {
+  background-color: #00345c;
+  border-radius: 0.2em 0.2em 0 0;
+  margin: 0 auto;
+  background-size: cover;
+  background-blend-mode: exclusion;
+  width: 100%;
+}
+
+.content {
+  margin: 3vh auto 0;
+  padding: 0.5em 1.5em 0.75em;
+  width: 100%;
+}
+
+.content * {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.content h3 {
+  margin: 0;
+}
+
+.content p {
+  max-width: 25ch;
+}
+
+@media only screen and (min-width: 1024px) {
+  .content p {
+    display: block;
+  }
+}
+
+#about #intro {
+  width: 40ch;
+}
+
+/* #project-1 .img, #project-1 .content{
+    margin-left: 0;
+}
+
+#project-4 .img, #project-4 .content{
+    margin-right: 0;
+} */
+#project-2 .img {
+  background-image: url("../img/makercube.png");
+  background-position: center;
+}
+
+#project-1 .img {
+  background-image: url("../img/dungeons.png");
+  background-position: center;
+}
+
+nav h2 {
+  max-width: 18ch;
+}
+
+@media only screen and (min-width: 437px) {
+  nav h2 {
+    max-width: 25ch;
+  }
+}
+/*# sourceMappingURL=main.css.map */
