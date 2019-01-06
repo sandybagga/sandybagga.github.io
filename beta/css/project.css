@@ -76,10 +76,6 @@ p {
   line-height: 130%;
 }
 
-a {
-  text-underline-position: under;
-}
-
 body,
 #wrap {
   background-color: #fdfdef;
