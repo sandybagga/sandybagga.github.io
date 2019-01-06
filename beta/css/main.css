@@ -271,6 +271,7 @@ footer h4 {
   padding-top: 2vh;
   margin-bottom: 25vh;
   -webkit-overflow-scrolling: touch;
+  overflow-y: visible;
 }
 
 #projects {
