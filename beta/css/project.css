@@ -78,6 +78,8 @@ p {
 
 a {
   text-underline-position: under;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
   -webkit-text-decoration-style: dotted;
           text-decoration-style: dotted;
 }
