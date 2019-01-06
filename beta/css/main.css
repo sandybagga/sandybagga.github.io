@@ -317,17 +317,17 @@ footer h4 {
   }
 }
 
-.project:hover {
-  -webkit-box-shadow: 0px 0.2em 4em rgba(0, 52, 92, 0.4);
-          box-shadow: 0px 0.2em 4em rgba(0, 52, 92, 0.4);
-}
-
-.project:hover .img {
-  background-color: black;
-}
-
-.project:hover span {
-  margin-left: 1em;
+@media only screen and (min-width: 437px) {
+  .project:hover {
+    -webkit-box-shadow: 0px 0.2em 4em rgba(0, 52, 92, 0.4);
+            box-shadow: 0px 0.2em 4em rgba(0, 52, 92, 0.4);
+  }
+  .project:hover .img {
+    background-color: black;
+  }
+  .project:hover span {
+    margin-left: 1em;
+  }
 }
 
 .img {
