@@ -118,7 +118,7 @@ body,
 }
 
 #land {
-  min-height: 90vh;
+  min-height: 85vh;
 }
 
 .flex {
@@ -268,6 +268,7 @@ footer h4 {
 #project-container {
   width: 100%;
   overflow-x: scroll;
+  padding-top: 2vh;
   margin-bottom: 25vh;
   -webkit-overflow-scrolling: touch;
 }
