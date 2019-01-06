@@ -112,7 +112,7 @@ body,
 }
 
 #land {
-  min-height: 85vh;
+  min-height: 80vh;
 }
 
 .flex {
@@ -186,7 +186,7 @@ footer h4 {
   border: 0.35rem solid #00345c;
   padding: 0.65rem;
   display: inline-block;
-  margin: 5vh 0 1vh;
+  margin: 10vh 0 1vh;
 }
 
 @media only screen and (min-width: 1024px) {
