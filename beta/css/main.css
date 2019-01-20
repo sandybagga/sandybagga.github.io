@@ -447,12 +447,20 @@ footer h4 {
 #about img {
   width: 25em;
   float: none;
-  margin: 3em 3em 1em 0;
+  margin: 3em 0 1em 3em;
+  width: 100%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 @media only screen and (min-width: 960px) {
   #about img {
-    float: left;
+    float: right;
+    width: 30%;
+    margin-top: -1em;
   }
 }
 
