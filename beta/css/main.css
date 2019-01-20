@@ -440,28 +440,23 @@ footer h4 {
     margin-right: 0;
 } */
 #about {
-  margin: 8vh auto 15vh;
-  -ms-grid-columns: 7fr 4fr;
-      grid-template-columns: 7fr 4fr;
-  grid-column-gap: 5em;
-}
-
-#about h2, #about #about-text {
-  -ms-grid-column: 1;
-  grid-column: 1;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 #about img {
-  width: 100%;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1 / 3;
-  -ms-grid-column: 2;
-  grid-column: 2;
-  mix-blend-mode: hard-light;
+  width: 25em;
+  float: none;
+  margin: 3em 3em 1em 0;
 }
 
-#about #about-text p {
+@media only screen and (min-width: 960px) {
+  #about img {
+    float: left;
+  }
+}
+
+#about p {
   font-size: 1.5em;
 }
 /*# sourceMappingURL=main.css.map */
