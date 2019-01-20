@@ -265,7 +265,7 @@ body {
   max-width: unset;
   width: 100vw;
   height: 100vh;
-  background-image: url("/img/makercube-header.jpg");
+  background-image: url("../img/makercube-header.jpg");
   background-size: cover;
   background-position: center;
   background-color: #00345c;
