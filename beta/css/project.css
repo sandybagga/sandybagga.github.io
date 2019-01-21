@@ -150,7 +150,7 @@ figcaption {
   fill: #fdfdef;
 }
 
-#land {
+.land {
   padding: 0 7vw;
   min-height: 80vh;
 }
@@ -190,13 +190,6 @@ figcaption {
   margin: 0;
   font-weight: 800;
   font-size: 1em;
-}
-
-.card {
-  -webkit-box-shadow: 0px 0.2em 1em rgba(0, 52, 92, 0.4);
-          box-shadow: 0px 0.2em 1em rgba(0, 52, 92, 0.4);
-  border-radius: 0.2em;
-  background-color: #fdfdef;
 }
 
 .grid {
@@ -261,16 +254,23 @@ body {
   }
 }
 
-#land {
+.land {
   max-width: unset;
   width: 100vw;
   height: 100vh;
-  background-image: url("../img/makercube-header.jpg");
   background-size: cover;
   background-position: center;
   background-color: #00345c;
   background-blend-mode: exclusion;
   padding: 0;
+}
+
+.land#makercube {
+  background-image: url("../img/makercube-header.jpg");
+}
+
+.land#visier {
+  background-image: url("../img/visier/Visier.jpg");
 }
 
 #top {
@@ -333,25 +333,29 @@ body {
   padding-bottom: 6vh;
 }
 
-#meta #metadata-grid {
+#meta .metadata-grid {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 1.5em;
 }
 
-#meta #metadata-grid h4 {
+#meta .metadata-grid h4 {
   margin-bottom: 0;
 }
 
-#meta #metadata-grid ul {
+#meta .metadata-grid ul {
   margin-top: 0.25em;
 }
 
 @media only screen and (min-width: 720px) {
-  #meta #metadata-grid {
+  #meta .metadata-grid {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+  }
+  #meta .metadata-grid#visier-metadata {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -431,6 +435,9 @@ nav ul li a {
         grid-template-columns: 1fr 6fr 1fr;
     grid-gap: 1em;
   }
+  #content-wrap div {
+    margin-bottom: 7.5em;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
@@ -448,6 +455,19 @@ nav ul li a {
   grid-column: 2;
 }
 
+#discover-section figure#terms-table img,
+#define-section figure#terms-table img,
+#develop-section figure#terms-table img {
+  padding: 2em;
+  background-color: white;
+}
+
+#discover-section figure#workflow img,
+#define-section figure#workflow img,
+#develop-section figure#workflow img {
+  background-color: red;
+}
+
 @media only screen and (min-width: 720px) {
   #discover-section,
   #define-section,
@@ -461,6 +481,21 @@ nav ul li a {
     -ms-grid-column: 2;
     -ms-grid-column-span: 3;
     grid-column: 2 / 5;
+  }
+  #discover-section p#visier-challenge-p1,
+  #define-section p#visier-challenge-p1,
+  #develop-section p#visier-challenge-p1 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-column: 3 / 6;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2 / 4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 4em;
+    padding-left: 2em;
   }
   #discover-section figure,
   #define-section figure,
@@ -485,6 +520,20 @@ nav ul li a {
     margin-left: -15vw;
     margin-right: -15vw;
   }
+  #discover-section figure#wfp,
+  #define-section figure#wfp,
+  #develop-section figure#wfp {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
+  #discover-section figure#wfa,
+  #define-section figure#wfa,
+  #develop-section figure#wfa {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
@@ -497,14 +546,14 @@ nav ul li a {
   }
 }
 
-#deliver-section {
+.makercube-deliver {
   grid-column-gap: 1.5em;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
 }
 
-#deliver-section #fig1 {
+.makercube-deliver #fig1 {
   min-width: 15em;
   max-width: 30vw;
   -ms-grid-column-align: center;
@@ -512,16 +561,18 @@ nav ul li a {
 }
 
 @media only screen and (min-width: 720px) {
-  #deliver-section {
+  .makercube-deliver {
     -ms-grid-columns: 2fr 3fr;
         grid-template-columns: 2fr 3fr;
   }
-  #deliver-section #p1, #deliver-section #p4 {
+  .makercube-deliver #p1,
+  .makercube-deliver #p4 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
   }
-  #deliver-section #p2, #deliver-section #p3 {
+  .makercube-deliver #p2,
+  .makercube-deliver #p3 {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -529,11 +580,57 @@ nav ul li a {
 }
 
 @media only screen and (min-width: 1080px) {
-  #deliver-section {
+  .makercube-deliver {
     -ms-grid-column: 2;
     -ms-grid-column-span: 3;
     grid-column: 2 / 5;
   }
+}
+
+.visier-deliver {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  grid-column-gap: 4em;
+}
+
+.visier-deliver #p1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+.visier-deliver #p2 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.visier-deliver #p4 {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.visier-deliver #workflow {
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.visier-deliver #workflow img {
+  padding: 2em;
+  background-color: white;
+}
+
+.visier-deliver #fig2 {
+  -ms-grid-column: 2;
+  grid-column: 2;
 }
 
 #discover-section {
