@@ -505,6 +505,7 @@ nav ul li a {
 }
 
 #deliver-section #fig1 {
+  min-width: 15em;
   max-width: 30vw;
   -ms-grid-column-align: center;
       justify-self: center;
