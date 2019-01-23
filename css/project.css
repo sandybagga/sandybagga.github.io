@@ -277,6 +277,11 @@ body {
   background-image: url("../img/dungeons.png");
 }
 
+.land#nordic {
+  background-image: url("../img/nordic/nordic header.jpg");
+  background-position: bottom;
+}
+
 #top {
   display: -ms-grid;
   display: grid;

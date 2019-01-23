@@ -91,8 +91,8 @@
 #projects {
     // max-height: 80vh;
     margin-bottom: 5vh;
-    width: 268vw;
-    grid-template-columns: repeat(3, 80vw);
+    width: 355vw;
+    grid-template-columns: repeat(4, 80vw);
     padding: 0 7vw;
     -webkit-overflow-scrolling: touch;
     grid-gap: 7vw;
@@ -105,7 +105,7 @@
     }
 
     @media only screen and (min-width: 1200px) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -117,7 +117,6 @@
     background-size: cover;
     background-blend-mode: exclusion;
     background-color: $main-color;
-
     @media only screen and (min-width: 640px) {
         grid-template-rows: 1fr;
     }
@@ -138,8 +137,7 @@
         font-size: 310%;
         font-weight: 800;
         line-height: 100%;
-        padding: 8vh 0;
-
+        padding: 10vh 0;
     }
 
     p {
@@ -187,16 +185,21 @@
 }
 
 #project-3 {
-    background-image: url('https://www.pehub.com/wp-content/uploads/2017/03/Visier.jpg');
+    background-image: url('../img/visier/Visier.jpg');
     background-position: center;
-    @media only screen and (min-width: 640px) {
-        grid-column: 1 / 3;
-    }
+    // @media only screen and (min-width: 640px) {
+    //     grid-column: 1 / 3;
+    // }
 
-    @media only screen and (min-width: 1200px) {
-        grid-column: span 1;
-    }
+    // @media only screen and (min-width: 1200px) {
+    //     grid-column: span 1;
+    // }
 }
+#project-4 {
+    background-image: url('../img/nordic/nordic\ header-home.jpg');
+    background-position: center;
+}
+
 
 .content {
     margin: 3vh auto 0;
