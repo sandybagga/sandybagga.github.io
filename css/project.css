@@ -89,6 +89,10 @@ a {
   border-bottom: 3px solid #00345c;
 }
 
+.link:hover {
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
 body,
 #wrap {
   background-color: #fefef3;
