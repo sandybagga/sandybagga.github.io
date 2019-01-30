@@ -37,7 +37,7 @@
                     </div>
                 </a>
             </div>
-            <nav>
+            <nav class="hide-nav">
                 <ul>
                     <li id="nav-land"><a href="#land">Overview</a></li>
                     <li id="nav-disc"><a href="#discover-section">Context</a></li>
@@ -128,7 +128,7 @@
             </div>
         </main>
         <section id="thanks">
-            <h3>Thanks for reading! <a href="index.html">Head home to view my other projects.</a></h3>
+            <h3>Thanks for reading! <a class="link" href="index.html">Head home to view my other projects.</a></h3>
         </section>
     </div>
 </body>
@@ -150,6 +150,11 @@
         aNav.addClass("nav-li-active");
 
         $(window).scroll(function () {
+            if($(window).scrollTop() > 50){
+                $("nav").removeClass("hide-nav");
+            } else {
+                $("nav").addClass("hide-nav");
+            }
             if ($(window).scrollTop() < bPos.top / 2) {
                 aNav.addClass("nav-li-active");
                 aNav.siblings().removeClass("nav-li-active");

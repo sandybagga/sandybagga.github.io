@@ -37,7 +37,7 @@
                     </div>
                 </a>
             </div>
-            <nav>
+            <nav class="hide-nav">
                 <ul>
                     <li id="nav-land"><a href="#land">Overview</a></li>
                     <li id="nav-disc"><a href="#discover-section">Discover</a></li>
@@ -149,7 +149,7 @@
                     these connections.</p>
                 <figure id="persona">
                     <img src="img/makercube/persona_martin.jpg" alt="persona poster for martin, a facilitator at maker cube">
-                    <figcaption>Fig. 4. The Facilitator Persona. <a target="_blank" href="img/makercube/personas.pdf">See
+                    <figcaption>Fig. 4. The Facilitator Persona. <a target="_blank" class="link" href="img/makercube/personas.pdf">See
                             all three ></a></figcaption>
                 </figure>
                 <p id="p5">To focus our development stage, we generated three personas from the synthesized probe
@@ -211,7 +211,7 @@
                     implementing our design and taking this project out of its originally intended course context.</p>
             </div>
         </main>
-        <section id="thanks"><h3>Thanks for reading! <a href="index.html">Head home to view my other projects.</a></h3></section>
+        <section id="thanks"><h3>Thanks for reading! <a class="link" href="index.html">Head home to view my other projects.</a></h3></section>
     </div>
 </body>
 <script type="text/javascript">
@@ -235,6 +235,11 @@
         aNav.addClass("nav-li-active");
 
         $(window).scroll(function () {
+            if($(window).scrollTop() > 50){
+                $("nav").removeClass("hide-nav");
+            } else {
+                $("nav").addClass("hide-nav");
+            }
             if ($(window).scrollTop() < bPos.top / 2) {
                 aNav.addClass("nav-li-active");
                 aNav.siblings().removeClass("nav-li-active");

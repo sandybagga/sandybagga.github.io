@@ -7,7 +7,7 @@
     <title>Sandy Bagga</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=0.85">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
@@ -15,35 +15,66 @@
 
 <body>
     <div id="wrap">
-        <section id="land">
-            <div id="top">
-                <div id="logo-container">
-                    <div id="logo">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            x="0px" y="0px" viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;"
-                            xml:space="preserve">
-                            <g>
-                                <path id="XMLID_66_" d="M1016.7,246.6c-24.2,24.4-48.4,48.7-72.7,73.1c-238.6-240-625.5-240-864.1,0
-                                                   C55.7,295.4,31.5,271,7.3,246.6C286-33.8,738-33.8,1016.7,246.6z" />
-                                <path id="XMLID_62_" d="M666.4,680.8l219.9,127.6l48-83.6L607.9,535.1l58.2-33.6l0.2,0.1l219.9,127.8l48-83.5L607.9,356.3
-                                                   l72.8-42.2l-48-83.5L512,300.7l-120.7-70.1l-48,83.5l72.8,42.2L89.8,545.9l48,83.5l219.9-127.8l58.4,33.9L89.8,725.1l48,83.5
-                                                   l219.9-127.8l58.4,33.9L89.8,904.2l48,83.5l374.1-217.4l0.1,0.1l374.2,217.3l48-83.6L607.9,714.3l58.3-33.6L666.4,680.8z
-                                                   M512,412l58.2,33.8l-58,33.8l-0.2-0.1l-58.4-33.7L512,412z M512.2,658.9l-0.2-0.1l-58.5-33.8l0.1-0.1l58.2-33.8l0.2,0.1
-                                                   l58.4,33.9L512.2,658.9z" />
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-                <h1 class="heading" id="my">
-                    My name is Sandy Bagga. I'm a product designer striving to
-                    build meaningful narratives.
-                </h1>
-                <div id="seeking">
-                    <h4 class="sentence">I'm actively seeking internship opportunities for Summer 2019.<h4>
+        <section class="land grid">
+            <div id="logo-container">
+                <div id="logo">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                        y="0px" viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+                        <g>
+                            <path id="XMLID_66_" d="M1016.7,246.6c-24.2,24.4-48.4,48.7-72.7,73.1c-238.6-240-625.5-240-864.1,0
+                                                                                   C55.7,295.4,31.5,271,7.3,246.6C286-33.8,738-33.8,1016.7,246.6z" />
+                            <path id="XMLID_62_" d="M666.4,680.8l219.9,127.6l48-83.6L607.9,535.1l58.2-33.6l0.2,0.1l219.9,127.8l48-83.5L607.9,356.3
+                                                                                   l72.8-42.2l-48-83.5L512,300.7l-120.7-70.1l-48,83.5l72.8,42.2L89.8,545.9l48,83.5l219.9-127.8l58.4,33.9L89.8,725.1l48,83.5
+                                                                                   l219.9-127.8l58.4,33.9L89.8,904.2l48,83.5l374.1-217.4l0.1,0.1l374.2,217.3l48-83.6L607.9,714.3l58.3-33.6L666.4,680.8z
+                                                                                   M512,412l58.2,33.8l-58,33.8l-0.2-0.1l-58.4-33.7L512,412z M512.2,658.9l-0.2-0.1l-58.5-33.8l0.1-0.1l58.2-33.8l0.2,0.1
+                                                                                   l58.4,33.9L512.2,658.9z" />
+                        </g>
+                    </svg>
                 </div>
             </div>
+            <h1>Sandy Bagga</h1>
+            <h2>I'm an experience designer building meaningful narratives <a class="link" href="#about">About me</a></h2>
+            <h3>I'm actively seeking internship opportunities for Summer 2019</h3>
         </section>
-        <section id="project-wrap">
+        <section id="projects-section" class="grid">
+            <div class="project grid" id="dungeons">
+                <h2 class="type">Experience Design</h2>
+                <a href="dungeons.html" class="project-link grid">
+                    <div class="img"></div>
+                    <h1>Dungeons & Dragons</h1>
+                    <h3>Academic Project, Fall 2018</h3>
+                    <p>The world's foremost table-top roleplaying brand makes adventure more accessible</p>
+                </a>
+            </div>
+            <div class="project grid" id="makercube">
+                <h2 class="type">Design Research</h2>
+                <a href="makercube.html" class="project-link grid">
+                    <div class="img"></div>
+                    <h1>Maker Cube Companion</h1>
+                    <h3>Academic Project, Spring 2018</h3>
+                    <p>Encouraging collaboration and enriching the culture at a community makerspace</p>
+                </a>
+            </div>
+            <div class="project grid" id="visier">
+                <h2 class="type">UX Design</h2>
+                <a href="visier.html" class="project-link grid">
+                    <div class="img"></div>
+                    <h1>UX/UI at Visier Inc.</h1>
+                    <h3>Internship, Spring + Summer 2017</h3>
+                    <p>Atomizing information architecture and streamlining developer handoff to optimize production</p>
+                </a>
+            </div>
+            <div class="project grid" id="nordic">
+                <h2 class="type">Brand Identity</h2>
+                <a href="nordic.html" class="project-link grid">
+                    <div class="img"></div>
+                    <h1>Nordic Bazaar</h1>
+                    <h3>Freelance Project, 2016</h3>
+                    <p>A culturally-aware identity for a brand dealing in Scandinavian fashion with Indian artisanality</p>
+                </a>
+            </div>
+        </section>
+        <!-- <section id="project-wrap">
             <h4 class="sentence">Here's some of my recent work:</h4>
             <div id="project-container">
 
@@ -67,26 +98,33 @@
                     </a>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section id="about">
-            <h2>A little about me</h2>
-            <img src="img/me.png" alt="">
-            <p id="p1">I'm a senior design student at Simon Fraser University in Vancouver, BC. I'm interested in brand
-                strategy, user journeys, and product design. I think interactions with an ecosystem of apps,
-                products, and services can and should be analysed at from a psychological perspective.</p>
+            <div id="about-grid" class="grid">
+                <h2 class="type">About Me</h2>
+                <img src="img/me.jpg" alt="">
+                <p id="p1">I'm a senior design student at Simon Fraser University in Vancouver, BC. I'm interested in
+                    brand
+                    strategy, user journeys, and product design. I think interactions with an ecosystem of apps,
+                    products, and services can and should be analysed at from a psychological perspective.</p>
 
-            <p id="p2">Humans think in narratives, and their interaction with such an ecosystem can be made more
-                efficient,
-                effective, and enjoyable if they are met with a narrative they can comprehend. For the same reason,
-                I'm interested in the study of mythology and religion.</p>
+                <p id="p2">Humans think in narratives, and their interaction with such an ecosystem can be made more
+                    efficient,
+                    effective, and enjoyable if they are met with a narrative they can comprehend. For the same reason,
+                    I'm interested in the study of mythology and religion.</p>
 
-            <p id="p3">Other things in which I am interested include jazz-fusion music, Brazilian Jiu-Jitsu, and
-                stand-up
-                comedy. Each of those are a form of expression (emotional, physical, and verbal) and none of those
-                are effective unless bound to a narrative.</p>
-            <div id="social"><a target="_blank" href="https://www.instagram.com/simranjitbagga/">Instagram</a><a target="_blank"
-                    href="https://www.linkedin.com/in/simranjitbagga/">LinkedIn</a><a target="_blank" href="resume.pdf">Résumé</a></div>
+                <p id="p3">Other things in which I am interested include jazz-fusion music, Brazilian Jiu-Jitsu, and
+                    stand-up
+                    comedy. Each of those are a form of expression (emotional, physical, and verbal) and none of those
+                    are effective unless bound to a narrative.</p>
+                <div id="social"><a target="_blank" class="link" href="https://www.instagram.com/simranjitbagga/">Instagram</a><a
+                        class="link" target="_blank" href="https://www.linkedin.com/in/simranjitbagga/">LinkedIn</a><a
+                        class="link" target="_blank" href="resume.pdf">Résumé</a></div>
+            </div>
         </section>
+        <footer>
+            <h4>Simranjit Bagga © 2019</h4>
+        </footer>
     </div>
 </body>
 

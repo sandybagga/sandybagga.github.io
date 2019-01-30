@@ -9,6 +9,7 @@
           box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -47,6 +48,7 @@ h1 {
 }
 
 h2 {
+  font-weight: 500;
   font-size: 1.6rem;
 }
 
@@ -72,13 +74,24 @@ h4.sentence {
 
 p {
   font-weight: 500;
-  font-size: 1.1em;
+  font-size: 1.17em;
   line-height: 130%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  text-transform: uppercase;
+  font-size: 80%;
+  font-weight: 700;
+  border-bottom: 3px solid #00345c;
 }
 
 body,
 #wrap {
-  background-color: #fdfdef;
+  background-color: #fefef3;
 }
 
 section, main {
@@ -102,57 +115,46 @@ figcaption {
   font-weight: 700;
 }
 
-#logo {
-  bottom: 3vh;
-  right: 7vw;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 3rem;
-  border: 0.23rem solid #00345c;
-  padding: 0.5rem 0.4rem 0.3rem;
+#logo-container {
+  left: 7vw;
+  max-width: 1500px;
+  mix-blend-mode: multiply;
+}
+
+#logo-container #logo {
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+  width: 4.75rem;
+  border: calc(calc(4.75rem / 4) / 2) solid #00345c;
+  padding: calc(4.75rem / 4);
   display: inline-block;
   margin: 10vh 0 1vh;
-  -webkit-transform-origin: top center;
-          transform-origin: top center;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
   border-color: #00345c;
 }
 
-@media only screen and (min-width: 720px) {
-  #logo {
-    -webkit-transform: scale(1.75);
-            transform: scale(1.75);
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  #logo {
-    -webkit-transform: scale(2.5);
-            transform: scale(2.5);
-  }
-}
-
-#logo svg {
+#logo-container #logo svg {
   fill: #00345c;
 }
 
-#logo * {
+#logo-container #logo * {
   -webkit-transition: none;
   transition: none;
 }
 
-#logo:hover {
+#logo-container #logo:hover {
   background-color: #00345c;
 }
 
-#logo:hover svg {
-  fill: #fdfdef;
+#logo-container #logo:hover svg {
+  fill: #fefef3;
 }
 
 .land {
   padding: 0 7vw;
   min-height: 80vh;
+  max-width: unset;
+  width: 100vw;
+  height: 100vh;
 }
 
 .flex {
@@ -224,34 +226,8 @@ body {
 }
 
 #logo-container {
-  left: 7vw;
-  padding: 0 7vw;
-  margin: 0 auto 15vh;
-  max-width: 1500px;
-  left: 7vw;
-  mix-blend-mode: multiply;
   text-align: center;
-}
-
-#logo-container #logo {
-  -webkit-transform-origin: top center;
-          transform-origin: top center;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-}
-
-@media only screen and (min-width: 720px) {
-  #logo-container #logo {
-    -webkit-transform: scale(1.75);
-            transform: scale(1.75);
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  #logo-container #logo {
-    -webkit-transform: scale(2.5);
-            transform: scale(2.5);
-  }
+  max-width: unset;
 }
 
 .land {
@@ -392,7 +368,7 @@ nav {
   -ms-grid-column-align: end;
       justify-self: end;
   width: 100%;
-  background-color: #fdfdef;
+  background-color: #fefef3;
 }
 
 nav ul {
@@ -421,6 +397,10 @@ nav ul li a {
   nav {
     display: initial;
   }
+}
+
+.hide-nav {
+  bottom: -8vh;
 }
 
 .nav-li-active {

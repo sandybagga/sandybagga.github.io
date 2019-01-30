@@ -37,7 +37,7 @@
                     </div>
                 </a>
             </div>
-            <nav>
+            <nav class="hide-nav">
                 <ul>
                     <li id="nav-land"><a href="#land">Overview</a></li>
                     <li id="nav-disc"><a href="#discover-section">Context</a></li>
@@ -47,7 +47,7 @@
                 </ul>
             </nav>
             <div id="top">
-                <h1 class="heading">UX + UI at&nbsp;Visier&nbsp;Inc.</h1>
+                <h1 class="heading">UX + UI<br />at&nbsp;Visier&nbsp;Inc.</h1>
                 <div id="overview">
                     <h3>Overview</h3>
                     <p>I interned at Visier Inc. for 8 months in 2017 as a UX Designer. My project of focus was the
@@ -171,7 +171,7 @@
             </div>
         </main>
         <section id="thanks">
-            <h3>Thanks for reading! <a href="index.html">Head home to view my other projects.</a></h3>
+            <h3>Thanks for reading! <a class="link" href="index.html">Head home to view my other projects.</a></h3>
         </section>
     </div>
 </body>
@@ -196,6 +196,11 @@
         aNav.addClass("nav-li-active");
 
         $(window).scroll(function () {
+            if($(window).scrollTop() > 50){
+                $("nav").removeClass("hide-nav");
+            } else {
+                $("nav").addClass("hide-nav");
+            }
             if ($(window).scrollTop() < bPos.top / 2) {
                 aNav.addClass("nav-li-active");
                 aNav.siblings().removeClass("nav-li-active");
