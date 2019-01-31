@@ -211,7 +211,6 @@
                 &:hover {
                     .img {
                         background-color: black;
-                        box-shadow: 0px 5px 15px $shadow-color;
                     }
 
                     p:after {
@@ -421,4 +420,8 @@
             flex-direction: row;
         }
     }
+}
+
+.pace .pace-progress {
+    background-color: $main-color;
 }

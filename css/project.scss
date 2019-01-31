@@ -24,7 +24,7 @@ body {
     padding: 0;
 
     &#makercube {
-        background-image: url('../img/makercube-header.jpg');
+        background-image: url('../img/makercube-header.webp');
     }
 
     &#visier {
@@ -382,4 +382,8 @@ img {
 #thanks {
     text-align: center;
     margin-bottom: 20vh;
+}
+
+.pace .pace-progress {
+    background-color: $bg-color;
 }
