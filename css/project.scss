@@ -126,13 +126,14 @@ body {
 nav {
     margin-top: 0.55em;
     position: fixed;
-    bottom: -1vh;
+    top: 0vh;
     width: min-content;
     margin: 0;
     display: none;
     justify-self: end;
     width: 100%;
     background-color: $bg-color;
+    z-index: 99;
 
     ul {
         width: 100%;
@@ -158,7 +159,7 @@ nav {
 }
 
 .hide-nav {
-    bottom: -8vh;
+    top: -8vh;
 }
 
 .nav-li-active {

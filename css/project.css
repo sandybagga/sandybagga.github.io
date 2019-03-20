@@ -399,7 +399,7 @@ body {
 nav {
   margin-top: 0.55em;
   position: fixed;
-  bottom: -1vh;
+  top: 0vh;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
@@ -409,6 +409,7 @@ nav {
       justify-self: end;
   width: 100%;
   background-color: #fefef3;
+  z-index: 99;
 }
 
 nav ul {
@@ -440,7 +441,7 @@ nav ul li a {
 }
 
 .hide-nav {
-  bottom: -8vh;
+  top: -8vh;
 }
 
 .nav-li-active {
