@@ -409,7 +409,7 @@ nav {
       justify-self: end;
   width: 100%;
   background-color: #fefef3;
-  z-index: 99;
+  z-index: 100;
 }
 
 nav ul {
