@@ -446,6 +446,10 @@ footer h4 {
   background-image: url("../img/makercube-4.jpg");
 }
 
+#projects-section .project#viff .project-link .img {
+  background-image: url("../img/viff.jpg");
+}
+
 #projects-section .project#visier .project-link .img {
   background-image: url("../img/visier/Visier.jpg");
 }
