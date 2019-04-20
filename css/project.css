@@ -293,6 +293,22 @@ body {
   background-image: url("../img/viff.jpg");
 }
 
+.land#viff #top .heading {
+  font-size: 12vw;
+}
+
+@media only screen and (min-width: 720px) {
+  .land#viff #top .heading {
+    font-size: 8vw;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .land#viff #top .heading {
+    font-size: 7vw;
+  }
+}
+
 .land#dungeons {
   background-image: url("../img/dungeons.png");
 }
