@@ -1,8 +1,4 @@
 @import url("https://use.typekit.net/can2owv.css");
-::-webkit-scrollbar {
-  display: none;
-}
-
 * {
   font-family: nimbus-sans, Helvetica, Arial, sans-serif;
   -webkit-box-sizing: border-box;
@@ -448,6 +444,10 @@ footer h4 {
 
 #projects-section .project#viff .project-link .img {
   background-image: url("../img/viff.jpg");
+}
+
+#projects-section .project#olivegarden .project-link .img {
+  background-image: url("../img/lftog index.png");
 }
 
 #projects-section .project#visier .project-link .img {

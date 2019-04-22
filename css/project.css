@@ -1,8 +1,4 @@
 @import url("https://use.typekit.net/can2owv.css");
-::-webkit-scrollbar {
-  display: none;
-}
-
 * {
   font-family: nimbus-sans, Helvetica, Arial, sans-serif;
   -webkit-box-sizing: border-box;
@@ -307,6 +303,10 @@ body {
   .land#viff #top .heading {
     font-size: 7vw;
   }
+}
+
+.land#olivegarden {
+  background-image: url("../img/lftog.jpg");
 }
 
 .land#dungeons {

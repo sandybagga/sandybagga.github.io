@@ -15,10 +15,6 @@ $logo-padding: calc(#{$logo-width} / 4);
 $logo-border: calc(#{$logo-padding} / 2);
 $logo-container-width: calc(#{$logo-width} + (#{$logo-padding} * 3));
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 * {
     font-family: nimbus-sans, Helvetica, Arial, sans-serif;
     box-sizing: border-box;
