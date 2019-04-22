@@ -304,6 +304,7 @@ footer h4 {
       -ms-grid-row-align: end;
       align-self: end;
   font-weight: 600;
+  overflow: hidden;
 }
 
 .land h2 {
