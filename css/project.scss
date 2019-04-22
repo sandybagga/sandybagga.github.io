@@ -31,21 +31,27 @@ body {
         background-image: url('../img/visier/Visier.jpg');
     }
 
-    &#viff{
+    &#nightout {
+        background-image: url('../img/nightout-head.jpg');
+    }
+
+    &#viff {
         background-image: url('../img/viff.jpg');
-        #top .heading{
+
+        #top .heading {
             font-size: 12vw;
+
             @media only screen and (min-width: 720px) {
                 font-size: 8vw;
             }
-    
+
             @media only screen and (min-width: 1080px) {
                 font-size: 7vw;
             }
         }
     }
 
-    &#olivegarden{
+    &#olivegarden {
         background-image: url('../img/lftog.jpg');
     }
 
@@ -70,6 +76,7 @@ body {
         margin: 8vh auto;
         font-size: 15vw;
         text-align: center;
+        height: 120%;
 
         @media only screen and (min-width: 720px) {
             font-size: 13vw;

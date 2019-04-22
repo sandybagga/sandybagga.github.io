@@ -452,6 +452,10 @@ footer h4 {
   background-image: url("../img/lftog index.png");
 }
 
+#projects-section .project#nightout .project-link .img {
+  background-image: url("../img/nightout.jpg");
+}
+
 #projects-section .project#visier .project-link .img {
   background-image: url("../img/visier/Visier.jpg");
 }
