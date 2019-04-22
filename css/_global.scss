@@ -20,6 +20,7 @@ $logo-container-width: calc(#{$logo-width} + (#{$logo-padding} * 3));
     box-sizing: border-box;
     transition: all 0.2s ease;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h1,
